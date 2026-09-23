@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,45 +14,3348 @@
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
         .progress-bar-bg {
             background-color: #ffffff1a;
         }
 
-        .port_image{
+        .port_image {
             height: 400px;
             width: 400px;
             border-radius: 50%;
             border: 2px solid navy;
-             background-image: url("portfolio_img.jpg");
-            background-size: cover    ;
+            background-image: url("portfolio_img.jpg");
+            background-size: cover;
             background-position: center top;
-           
-           
+
+
         }
+
         .ai-tools-head {
-    font-size: 15px;
-    color: #cbd5e1; /* Smooth Light Gray Text */
-    line-height: 1.6; /* Balanced line spacing */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 12px;
+            font-size: 15px;
+            color: #cbd5e1;
+            /* Smooth Light Gray Text */
+            line-height: 1.6;
+            /* Balanced line spacing */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 12px;
+        }
+
+        .ai-tools-title {
+            color: #c084fc;
+            /* Perfect Purple Theme Match (#purple-400) */
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-right: 4px;
+        }
+
+
+        /* what i do   section  updated  */
+        /* =========================================================
+   SKILLS SECTION
+   TERMINAL / DEVCON STYLE
+========================================================= */
+
+        .skills-section {
+            position: relative;
+            width: 100%;
+
+            padding: 90px 5% 65px;
+
+            background:
+                radial-gradient(circle at 15% 25%,
+                    rgba(60, 255, 110, 0.035),
+                    transparent 28%),
+                radial-gradient(circle at 85% 70%,
+                    rgba(255, 145, 45, 0.025),
+                    transparent 30%),
+                #030603;
+
+            color: #fff;
+
+            overflow: hidden;
+        }
+
+
+        /* =========================================================
+   BACKGROUND GRID
+========================================================= */
+
+        .skills-section::before {
+            content: "";
+
+            position: absolute;
+            inset: 0;
+
+            background-image:
+                linear-gradient(rgba(80, 255, 120, 0.018) 1px,
+                    transparent 1px),
+                linear-gradient(90deg,
+                    rgba(80, 255, 120, 0.018) 1px,
+                    transparent 1px);
+
+            background-size: 45px 45px;
+
+            mask-image:
+                linear-gradient(to bottom,
+                    transparent,
+                    black 12%,
+                    black 88%,
+                    transparent);
+
+            pointer-events: none;
+        }
+
+
+        /* =========================================================
+   HEADER
+========================================================= */
+
+        .skills-header {
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 850px;
+
+            margin: 0 auto 48px;
+
+            text-align: center;
+        }
+
+
+        /* small label */
+
+        .section-kicker {
+            display: inline-block;
+
+            margin-bottom: 9px;
+
+            color: #61e77b;
+
+            font-family: monospace;
+
+            font-size: 9px;
+
+            font-weight: 700;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* MAIN HEADING */
+
+        .skills-header h2 {
+            margin: 0;
+
+            color: #eeeeee;
+
+            font-size: clamp(38px, 5vw, 52px);
+
+            line-height: 1.05;
+
+            font-weight: 500;
+
+            letter-spacing: -1px;
+        }
+
+
+        /* heading highlight */
+
+        .skills-header h2 span {
+            background:
+                linear-gradient(90deg,
+                    #62e97d,
+                    #ff9d3d);
+
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            color: transparent;
+        }
+
+
+        /* subtitle */
+
+        .skills-header p {
+            max-width: 650px;
+
+            margin: 13px auto 0;
+
+            color: #667068;
+
+            font-family: monospace;
+
+            font-size: 10px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================================================
+   MAIN SKILLS GRID
+========================================================= */
+
+        .skills-grid {
+            position: relative;
+
+            z-index: 2;
+
+            width: 100%;
+
+            max-width: 1120px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 15px;
+        }
+
+
+        /* =========================================================
+   MAIN SKILL CARD
+========================================================= */
+
+        .skill-card {
+            position: relative;
+
+            min-height: 375px;
+
+            padding: 15px;
+
+            background:
+                linear-gradient(145deg,
+                    rgba(7, 14, 9, 0.98),
+                    rgba(2, 5, 3, 0.99));
+
+            border: 1px solid rgba(75, 255, 110, 0.32);
+
+            border-radius: 2px;
+
+            overflow: hidden;
+
+            box-shadow:
+                inset 0 0 35px rgba(55, 255, 100, 0.015);
+
+            transition:
+                transform .3s ease,
+                border-color .3s ease,
+                box-shadow .3s ease;
+        }
+
+
+        /* inner border */
+
+        .skill-card::after {
+            content: "";
+
+            position: absolute;
+
+            inset: 6px;
+
+            border: 1px solid rgba(80, 255, 120, 0.035);
+
+            pointer-events: none;
+        }
+
+
+        /* hover */
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+
+            border-color:
+                rgba(90, 255, 120, 0.72);
+
+            box-shadow:
+                0 0 25px rgba(60, 255, 100, 0.055),
+                0 15px 45px rgba(0, 0, 0, 0.45);
+        }
+
+
+        /* =========================================================
+   CARD TITLE
+========================================================= */
+
+        .skill-title {
+            position: relative;
+
+            z-index: 5;
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 10px;
+        }
+
+
+        /* number */
+
+        .title-number {
+            padding-top: 3px;
+
+            color: #4e9a5b;
+
+            font-family: monospace;
+
+            font-size: 8px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* title */
+
+        .skill-title h3 {
+            margin: 0;
+
+            color: #e9eee9;
+
+            font-size: 16px;
+
+            font-weight: 600;
+        }
+
+
+        /* subtitle */
+
+        .skill-title p {
+            margin: 5px 0 0;
+
+            color: #536057;
+
+            font-family: monospace;
+
+            font-size: 8px;
+        }
+
+
+        /* =========================================================
+   TRIANGLE NETWORK
+========================================================= */
+
+        .skill-network {
+            position: relative;
+
+            width: 235px;
+
+            height: 220px;
+
+            margin: 15px auto 5px;
+        }
+
+
+        /* triangle */
+
+        .skill-network::before {
+            content: "";
+
+            position: absolute;
+
+            left: 22px;
+
+            top: 7px;
+
+            width: 190px;
+
+            height: 185px;
+
+            clip-path:
+                polygon(50% 0%,
+                    100% 100%,
+                    0% 100%);
+
+            background:
+                linear-gradient(145deg,
+                    rgba(55, 255, 100, 0.055),
+                    rgba(8, 25, 12, 0.12));
+
+            border: 1px solid rgba(75, 255, 110, 0.35);
+
+            filter:
+                drop-shadow(0 0 8px rgba(60, 255, 100, 0.07));
+        }
+
+
+        /* =========================================================
+   CENTER CORE
+========================================================= */
+
+        .skill-core {
+            position: absolute;
+
+            left: 72px;
+
+            top: 67px;
+
+            width: 90px;
+
+            height: 90px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            z-index: 5;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(circle,
+                    rgba(62, 255, 100, 0.12),
+                    rgba(2, 8, 4, 0.98) 72%);
+
+            border: 1px solid rgba(77, 255, 111, 0.48);
+
+            box-shadow:
+                0 0 20px rgba(60, 255, 100, 0.07);
+        }
+
+
+        /* center logo */
+
+        .skill-core img {
+            width: 30px;
+
+            height: 30px;
+
+            object-fit: contain;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* center title */
+
+        .skill-core strong {
+            color: #f1f5f1;
+
+            font-size: 11px;
+
+            font-weight: 700;
+        }
+
+
+        /* center subtitle */
+
+        .skill-core small {
+            margin-top: 3px;
+
+            color: #608269;
+
+            font-family: monospace;
+
+            font-size: 7px;
+        }
+
+
+        /* =========================================================
+   CORNER NODES
+========================================================= */
+
+        .skill-node {
+            position: absolute;
+
+            width: 70px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            text-align: center;
+
+            z-index: 5;
+        }
+
+
+        /* logos */
+
+        .skill-node img {
+            width: 25px;
+
+            height: 25px;
+
+            object-fit: contain;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* labels */
+
+        .skill-node span {
+            color: #c5cec7;
+
+            font-family: monospace;
+
+            font-size: 7px;
+
+            line-height: 1.3;
+        }
+
+
+        /* top left */
+
+        .node-top-left {
+            left: 5px;
+
+            top: 2px;
+        }
+
+
+        /* top right */
+
+        .node-top-right {
+            right: 5px;
+
+            top: 2px;
+        }
+
+
+        /* bottom */
+
+        .node-bottom {
+            left: 82px;
+
+            bottom: 0;
+        }
+
+
+        /* =========================================================
+   TEXT LOGOS
+========================================================= */
+
+        .text-logo,
+        .core-text-logo {
+            font-family: monospace;
+
+            font-weight: 900;
+
+            color: #eaf1eb;
+
+            letter-spacing: -1px;
+        }
+
+
+        /* node text logo */
+
+        .text-logo {
+            font-size: 15px;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* center text logo */
+
+        .core-text-logo {
+            font-size: 20px;
+
+            margin-bottom: 4px;
+        }
+
+
+        /* React */
+
+        .react-core img {
+            width: 34px;
+
+            height: 34px;
+        }
+
+
+        /* AI symbol */
+
+        .ai-symbol {
+            margin-bottom: 5px;
+
+            color: #ff9d3d;
+
+            font-size: 25px;
+        }
+
+
+        /* AI core */
+
+        .ai-core {
+            background:
+                radial-gradient(circle,
+                    rgba(255, 140, 50, 0.12),
+                    rgba(4, 8, 5, 0.98) 72%);
+
+            border-color:
+                rgba(255, 150, 65, 0.42);
+        }
+
+
+        /* mini AI */
+
+        .mini-ai {
+            display: flex;
+
+            width: 27px;
+
+            height: 27px;
+
+            align-items: center;
+
+            justify-content: center;
+
+            margin-bottom: 5px;
+
+            border-radius: 5px;
+
+            background:
+                rgba(255, 150, 60, 0.08);
+
+            border:
+                1px solid rgba(255, 150, 60, 0.2);
+
+            color: #ffad60 !important;
+
+            font-family: monospace;
+
+            font-size: 8px;
+
+            font-weight: 800;
+        }
+
+
+        /* platform logo */
+
+        .platform-logo {
+            display: flex;
+
+            width: 29px;
+
+            height: 29px;
+
+            align-items: center;
+
+            justify-content: center;
+
+            margin-bottom: 5px;
+
+            border-radius: 5px;
+
+            background: rgba(255, 255, 255, .045);
+
+            color: #e6ebe7 !important;
+
+            font-size: 8px !important;
+
+            font-weight: 800 !important;
+        }
+
+
+        /* azure */
+
+        .azure {
+            color: #5ab6ff !important;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* my personal experince with aitools   */
+        /* =========================================================
+   IBM AI DEVELOPMENT EXPERIENCE
+   Compact Blue UI — matches portfolio theme
+========================================================= */
+
+#ibm-ai-experience {
+    width: 100%;
+    max-width: 100%;
+    padding: 35px 18px 30px;
+
+    background: #1b1e2b;
+    color: #ffffff;
+
+    box-sizing: border-box;
 }
+
+
+/* =========================================================
+   IBM HEADER
+========================================================= */
+
+#ibm-ai-experience .ibm-exp-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+#ibm-ai-experience .ibm-exp-header > span {
+    display: block;
+
+    color: #a66cff;
+
+    font-family: monospace;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+#ibm-ai-experience .ibm-exp-header h2 {
+    margin: 0 0 7px;
+
+    font-size: 27px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    color: #f1f1f5;
+}
+
+#ibm-ai-experience .ibm-exp-header p {
+    margin: 0 auto;
+
+    max-width: 700px;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    color: #777d8d;
+}
+
+
+/* =========================================================
+   IBM WORKFLOW
+========================================================= */
+
+#ibm-ai-experience .ibm-workflow {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 24px
+        1fr 24px
+        1fr 24px
+        1fr 24px
+        1fr;
+
+    align-items: stretch;
+
+    gap: 8px;
+
+    max-width: 1450px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   IBM STEP CARD
+========================================================= */
+
+#ibm-ai-experience .ibm-step {
+
+    min-width: 0;
+
+    min-height: 185px;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    background: #171a26;
+
+    border: 1px solid rgba(255,255,255,.045);
+
+    border-radius: 13px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    transition: .2s ease;
+}
+
+#ibm-ai-experience .ibm-step:hover {
+
+    transform: translateY(-3px);
+
+    border-color: rgba(150,100,255,.45);
+
+    background: #1a1d2b;
+
+    box-shadow:
+        0 8px 22px rgba(0,0,0,.18);
+}
+
+
+/* =========================================================
+   STEP NUMBER
+========================================================= */
+
+#ibm-ai-experience .ibm-step-number {
+
+    margin-bottom: 9px;
+
+    color: #606779;
+
+    font-family: monospace;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   IBM ICON
+========================================================= */
+
+#ibm-ai-experience .ibm-step-icon {
+
+    width: 36px;
+
+    height: 36px;
+
+    margin-bottom: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #20253a;
+
+    border: 1px solid rgba(130,100,255,.25);
+
+    border-radius: 9px;
+
+    color: #9b72ff;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+#ibm-ai-experience .ibm-step-label {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #737a8c;
+
+    font-family: monospace;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   STEP TITLE
+========================================================= */
+
+#ibm-ai-experience .ibm-step-content h3 {
+
+    margin: 0 0 7px;
+
+    color: #d8c2ff;
+
+    font-size: 16px;
+
+    line-height: 1.2;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   STEP DESCRIPTION
+========================================================= */
+
+#ibm-ai-experience .ibm-step-content p {
+
+    margin: 0;
+
+    color: #858b9b;
+
+    font-size: 9px;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   CONNECTOR
+========================================================= */
+
+#ibm-ai-experience .ibm-connector {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #8160d8;
+
+    font-size: 15px;
+
+    font-family: monospace;
+}
+
+#ibm-ai-experience .ibm-connector span {
+
+    opacity: .75;
+}
+
+
+/* =========================================================
+   LIVE PROJECT
+========================================================= */
+
+#ibm-ai-experience .ibm-live-project {
+
+    width: min(560px, 100%);
+
+    margin: 25px auto 0;
+
+    padding: 17px 22px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background: #171a26;
+
+    border: 1px solid rgba(150,100,255,.28);
+
+    border-radius: 13px;
+}
+
+
+/* LIVE STATUS */
+
+#ibm-ai-experience .live-status {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #55d9c7;
+
+    font-family: monospace;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+#ibm-ai-experience .live-dot {
+
+    width: 5px;
+
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #55d9c7;
+
+    box-shadow: 0 0 7px rgba(85,217,199,.7);
+}
+
+
+/* PROJECT NAME */
+
+#ibm-ai-experience .ibm-live-project h3 {
+
+    margin: 7px 0 4px;
+
+    color: #f0e9ff;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+/* PROJECT DESCRIPTION */
+
+#ibm-ai-experience .ibm-live-project p {
+
+    max-width: 480px;
+
+    margin: 0 auto 13px;
+
+    color: #777d8d;
+
+    font-size: 9px;
+
+    line-height: 1.5;
+}
+
+
+/* LIVE BUTTON */
+
+#ibm-ai-experience .live-project-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 8px 14px;
+
+    background: #7654dc;
+
+    color: #ffffff;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-family: monospace;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    transition: .2s ease;
+}
+
+#ibm-ai-experience .live-project-btn:hover {
+
+    background: #8b69ed;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   AI-ASSISTED DEVELOPMENT TOOLS
+   Your EXACT HTML classes
+========================================================= */
+
+.ai-tools-head {
+
+    margin: 18px 0 10px;
+
+    padding: 0;
+}
+
+
+/* Heading */
 
 .ai-tools-title {
-    color: #c084fc; /* Perfect Purple Theme Match (#purple-400) */
+
+    display: block;
+
+    color: #bd86ff;
+
+    font-size: 19px;
+
+    line-height: 1.2;
+
     font-weight: 600;
-    letter-spacing: 0.5px;
-    margin-right: 4px;
 }
 
-/* Responsive adjustment for small screens */
-@media (max-width: 768px) {
-    .ai-tools-head {
-        font-size: 14px;
+
+/* =========================================================
+   AI TOOL GRID
+
+   Your HTML:
+   grid grid-cols-1 md:grid-cols-5 gap-3
+========================================================= */
+
+.ai-tools-head + .grid {
+
+    width: 100%;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr)) !important;
+
+    gap: 16px !important;
+
+    margin-top: 0;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   AI TOOL CARDS
+
+   Directly targets the divs inside the grid
+========================================================= */
+
+.ai-tools-head + .grid > div {
+
+    height: 90px;
+
+    min-width: 0;
+
+    padding: 10px 8px !important;
+
+    box-sizing: border-box;
+
+    display: flex !important;
+
+    flex-direction: column;
+
+    justify-content: center !important;
+
+    align-items: center !important;
+
+    text-align: center;
+
+    background: #171a26 !important;
+
+    border: 1px solid rgba(255,255,255,.045) !important;
+
+    border-radius: 15px !important;
+
+    backdrop-filter: none !important;
+
+    box-shadow: none !important;
+
+    transition: .2s ease;
+}
+
+
+/* =========================================================
+   CATEGORY TEXT
+========================================================= */
+
+.ai-tools-head + .grid > div > span {
+
+    margin-bottom: 7px !important;
+
+    color: #747989 !important;
+
+    font-size: 12px !important;
+
+    line-height: 1.1;
+
+    font-weight: 600 !important;
+
+    letter-spacing: .3px !important;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   TOOL NAME
+========================================================= */
+
+.ai-tools-head + .grid > div > div {
+
+    font-size: 15px !important;
+
+    line-height: 1.2;
+
+    font-weight: 600 !important;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   INDIVIDUAL TOOL COLORS
+========================================================= */
+
+/* ChatGPT / Gemini */
+
+.ai-tools-head + .grid > div:nth-child(1) > div {
+
+    color: #bd86ff !important;
+}
+
+
+/* v0 */
+
+.ai-tools-head + .grid > div:nth-child(2) > div {
+
+    color: #ff9f43 !important;
+}
+
+
+/* Cursor / Claude */
+
+.ai-tools-head + .grid > div:nth-child(3) > div {
+
+    color: #d0a4ff !important;
+}
+
+
+/* Postman */
+
+.ai-tools-head + .grid > div:nth-child(4) > div {
+
+    color: #ff6565 !important;
+}
+
+
+/* GitHub Actions */
+
+.ai-tools-head + .grid > div:nth-child(5) > div {
+
+    color: #35d9c7 !important;
+}
+
+
+/* =========================================================
+   AI TOOL HOVER
+========================================================= */
+
+.ai-tools-head + .grid > div:hover {
+
+    transform: translateY(-2px);
+
+    background: #1a1d2b !important;
+
+    border-color:
+        rgba(150,100,255,.4) !important;
+
+    box-shadow:
+        0 7px 18px rgba(0,0,0,.16) !important;
+}
+
+
+/* =========================================================
+   REMOVE UNWANTED TAILWIND EFFECTS
+========================================================= */
+
+.ai-tools-head + .grid .backdrop-blur-sm {
+
+    backdrop-filter: none !important;
+
+    -webkit-backdrop-filter: none !important;
+}
+
+.ai-tools-head + .grid .ring-1 {
+
+    --tw-ring-shadow: none !important;
+
+    box-shadow: none !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    #ibm-ai-experience .ibm-workflow {
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+    #ibm-ai-experience .ibm-connector {
+
+        display: none;
+    }
+
+    .ai-tools-head + .grid {
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr)) !important;
     }
 }
-       
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    #ibm-ai-experience {
+
+        padding-left: 12px;
+
+        padding-right: 12px;
+    }
+
+
+    #ibm-ai-experience .ibm-exp-header h2 {
+
+        font-size: 22px;
+    }
+
+
+    #ibm-ai-experience .ibm-workflow {
+
+        grid-template-columns: 1fr;
+
+        gap: 9px;
+    }
+
+
+    #ibm-ai-experience .ibm-step {
+
+        min-height: 145px;
+    }
+
+
+    #ibm-ai-experience .ibm-connector {
+
+        display: none;
+    }
+
+
+    .ai-tools-head + .grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 10px !important;
+    }
+
+
+    .ai-tools-head + .grid > div {
+
+        height: 78px;
+
+        border-radius: 12px !important;
+    }
+
+
+    .ai-tools-head + .grid > div > span {
+
+        font-size: 9px !important;
+    }
+
+
+    .ai-tools-head + .grid > div > div {
+
+        font-size: 11px !important;
+    }
+}
+        /* =========================================================
+   SKILL TAGS
+========================================================= */
+
+        .skill-tags {
+            position: relative;
+
+            z-index: 5;
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 5px;
+
+            margin-top: 7px;
+        }
+
+
+        /* tags */
+
+        .skill-tags span {
+            padding: 5px 7px;
+
+            border-radius: 2px;
+
+            background:
+                rgba(70, 255, 110, 0.025);
+
+            border:
+                1px solid rgba(75, 255, 110, 0.09);
+
+            color: #68746b;
+
+            font-family: monospace;
+
+            font-size: 7px;
+
+            transition: .25s;
+        }
+
+
+        /* hover */
+
+        .skill-card:hover .skill-tags span {
+            color: #a2b9a8;
+
+            border-color:
+                rgba(75, 255, 110, 0.18);
+        }
+
+
+        /* =========================================================
+   PROGRAMMING LANGUAGES
+========================================================= */
+
+        .programming-card {
+            grid-column: span 2;
+
+            min-height: 220px;
+        }
+
+
+        /* language row */
+
+        .language-row {
+            display: grid;
+
+            grid-template-columns:
+                repeat(5, 1fr);
+
+            gap: 8px;
+
+            margin-top: 28px;
+        }
+
+
+        /* language */
+
+        .language-item {
+            min-height: 82px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 7px;
+
+            border-radius: 3px;
+
+            background:
+                rgba(255, 255, 255, .018);
+
+            border:
+                1px solid rgba(75, 255, 110, .07);
+
+            transition: .25s;
+        }
+
+
+        /* hover */
+
+        .language-item:hover {
+            transform: translateY(-3px);
+
+            border-color:
+                rgba(75, 255, 110, .25);
+
+            background:
+                rgba(70, 255, 110, .03);
+        }
+
+
+        /* language logos */
+
+        .language-item img {
+            width: 27px;
+
+            height: 27px;
+
+            object-fit: contain;
+        }
+
+
+        /* language name */
+
+        .language-item span {
+            color: #aeb8b0;
+
+            font-family: monospace;
+
+            font-size: 8px;
+        }
+
+
+        /* C / SQL */
+
+        .c-logo,
+        .sql-logo {
+            font-family: monospace;
+
+            font-size: 20px !important;
+
+            font-weight: 900;
+
+            color: #dce6de !important;
+        }
+
+
+        /* =========================================================
+   DEVELOPMENT TOOLS
+========================================================= */
+
+        .tools-card {
+            grid-column: span 1;
+
+            min-height: 220px;
+        }
+
+
+        /* tools */
+
+        .tool-row {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 7px;
+
+            margin-top: 27px;
+        }
+
+
+        /* tool item */
+
+        .tool-item {
+            min-height: 72px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 6px;
+
+            border-radius: 3px;
+
+            background:
+                rgba(255, 255, 255, .018);
+
+            border:
+                1px solid rgba(75, 255, 110, .07);
+        }
+
+
+        /* tool logo */
+
+        .tool-item img {
+            width: 24px;
+
+            height: 24px;
+
+            object-fit: contain;
+        }
+
+
+        /* tool name */
+
+        .tool-item span {
+            color: #7e8b82;
+
+            font-family: monospace;
+
+            font-size: 7px;
+
+            text-align: center;
+        }
+
+
+        /* AI tool */
+
+        .ai-tool {
+            width: 25px;
+
+            height: 25px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 4px;
+
+            background:
+                rgba(255, 150, 60, .07);
+
+            color: #ffad60 !important;
+
+            font-family: monospace;
+
+            font-size: 7px;
+
+            font-weight: 800;
+        }
+
+
+        /* =========================================================
+   CORE CS
+========================================================= */
+
+        .core-card {
+            grid-column: span 3;
+
+            min-height: 205px;
+        }
+
+
+        /* core grid */
+
+        .core-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(5, 1fr);
+
+            gap: 8px;
+
+            margin-top: 27px;
+        }
+
+
+        /* core item */
+
+        .core-grid div {
+            padding: 17px 10px;
+
+            text-align: center;
+
+            border-radius: 3px;
+
+            background:
+                rgba(255, 255, 255, .018);
+
+            border:
+                1px solid rgba(75, 255, 110, .07);
+
+            transition: .25s;
+        }
+
+
+        /* hover */
+
+        .core-grid div:hover {
+            border-color:
+                rgba(75, 255, 110, .22);
+
+            transform: translateY(-3px);
+        }
+
+
+        /* number */
+
+        .core-grid strong {
+            display: block;
+
+            margin-bottom: 5px;
+
+            color: #ff9d3d;
+
+            font-family: monospace;
+
+            font-size: 15px;
+        }
+
+
+        /* description */
+
+        .core-grid span {
+            color: #78837b;
+
+            font-family: monospace;
+
+            font-size: 7px;
+
+            line-height: 1.4;
+        }
+
+
+        /* =========================================================
+   SKILLS FOOTER
+========================================================= */
+
+        .skills-footer {
+            position: relative;
+
+            z-index: 2;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            margin-top: 42px;
+
+            color: #3f7449;
+
+            font-family: monospace;
+
+            font-size: 7px;
+
+            letter-spacing: 3px;
+        }
+
+
+        /* footer line */
+
+        .skills-footer i {
+            display: block;
+
+            width: 28px;
+
+            height: 1px;
+
+            background:
+                linear-gradient(90deg,
+                    transparent,
+                    #4b9657,
+                    transparent);
+        }
+
+
+        /* =========================================================
+   OLD TOOL CARD SUPPORT
+========================================================= */
+
+        .tool-card {
+            width: 105px;
+
+            height: 105px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 8px;
+
+            background: #060b07;
+
+            border:
+                1px solid rgba(75, 255, 110, .12);
+
+            border-radius: 3px;
+
+            text-decoration: none;
+
+            color: white;
+
+            transition: .3s ease;
+        }
+
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+
+            border-color:
+                rgba(75, 255, 110, .4);
+
+            box-shadow:
+                0 10px 25px rgba(40, 255, 90, .05);
+        }
+
+
+        .tool-card i {
+            font-size: 28px;
+
+            color: #65df7b;
+
+            margin-bottom: 3px;
+        }
+
+
+        .tool-card span {
+            color: #9ca89f;
+
+            font-family: monospace;
+
+            font-size: 8px;
+
+            font-weight: 600;
+
+            text-align: center;
+        }
+
+
+        /* =========================================================
+   RESPONSIVE — 1000px
+========================================================= */
+
+        @media (max-width: 1000px) {
+
+            .skills-grid {
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+            }
+
+            .programming-card {
+                grid-column: span 2;
+            }
+
+            .tools-card {
+                grid-column: span 2;
+            }
+
+            .core-card {
+                grid-column: span 2;
+            }
+
+            .core-grid {
+                grid-template-columns:
+                    repeat(3, 1fr);
+            }
+        }
+
+
+        /* =========================================================
+   RESPONSIVE — 750px
+========================================================= */
+
+        @media (max-width: 750px) {
+
+            .skills-section {
+                padding: 70px 18px 50px;
+            }
+
+            .skills-header {
+                margin-bottom: 35px;
+            }
+
+            .skills-header h2 {
+                font-size: 38px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skill-card,
+            .programming-card,
+            .tools-card,
+            .core-card {
+                grid-column: span 1;
+
+                width: 100%;
+            }
+
+            .language-row {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .core-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+        }
+
+
+        /* =========================================================
+   RESPONSIVE — 450px
+========================================================= */
+
+        @media (max-width: 450px) {
+
+            .skills-section {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            .skills-header h2 {
+                font-size: 34px;
+            }
+
+            .skill-network {
+                transform: scale(.92);
+
+                transform-origin: center;
+
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .language-row {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .tool-row {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .core-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .core-grid div:last-child {
+                grid-column: span 2;
+            }
+        }
+
+
+
+
+        /* =========================================================
+   EDUCATION SECTION
+   DEVCON / TERMINAL STYLE
+========================================================= */
+
+        .education-section {
+            position: relative;
+            width: 100%;
+
+            padding: 80px 5% 55px;
+
+            background:
+                radial-gradient(circle at 50% 40%,
+                    rgba(40, 255, 100, 0.035),
+                    transparent 38%),
+                #030603;
+
+            color: #ffffff;
+
+            overflow: hidden;
+        }
+
+
+        /* =========================================================
+   SUBTLE TERMINAL GRID
+========================================================= */
+
+        .education-section::before {
+            content: "";
+
+            position: absolute;
+            inset: 0;
+
+            background-image:
+                linear-gradient(rgba(80, 255, 120, 0.018) 1px,
+                    transparent 1px),
+                linear-gradient(90deg,
+                    rgba(80, 255, 120, 0.018) 1px,
+                    transparent 1px);
+
+            background-size: 45px 45px;
+
+            mask-image:
+                linear-gradient(to bottom,
+                    transparent,
+                    black 15%,
+                    black 85%,
+                    transparent);
+
+            pointer-events: none;
+        }
+
+
+        /* =========================================================
+   EDUCATION HEADER
+========================================================= */
+
+        .education-header {
+            position: relative;
+
+            z-index: 2;
+
+            text-align: center;
+
+            margin-bottom: 42px;
+        }
+
+
+        /* small green heading */
+
+        .edu-kicker {
+            display: block;
+
+            margin-bottom: 8px;
+
+            color: #5be878;
+
+            font-family: monospace;
+
+            font-size: 9px;
+
+            font-weight: 700;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* Education */
+
+        .education-header h2 {
+            margin: 0;
+
+            color: #eeeeee;
+
+            font-size: 42px;
+
+            line-height: 1.1;
+
+            font-weight: 500;
+
+            letter-spacing: -1px;
+        }
+
+
+        /* subtitle */
+
+        .education-header p {
+            margin: 12px 0 0;
+
+            color: #56605a;
+
+            font-family: monospace;
+
+            font-size: 10px;
+
+            letter-spacing: .3px;
+        }
+
+
+        /* =========================================================
+   THREE EDUCATION CARDS
+========================================================= */
+
+        .education-grid {
+            position: relative;
+
+            z-index: 2;
+
+            width: 100%;
+
+            max-width: 1060px;
+
+            margin: 0 auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 16px;
+        }
+
+
+        /* =========================================================
+   CARD
+========================================================= */
+
+        .edu-card {
+            position: relative;
+
+            height: 340px;
+
+            padding: 14px;
+
+            background:
+                linear-gradient(145deg,
+                    rgba(5, 12, 7, 0.98),
+                    rgba(1, 4, 2, 0.99));
+
+            border: 1px solid rgba(66, 255, 105, 0.42);
+
+            overflow: hidden;
+
+            transition:
+                transform .3s ease,
+                border-color .3s ease,
+                box-shadow .3s ease;
+        }
+
+
+        /* inner terminal frame */
+
+        .edu-card::after {
+            content: "";
+
+            position: absolute;
+
+            inset: 6px;
+
+            border: 1px solid rgba(80, 255, 120, 0.035);
+
+            pointer-events: none;
+        }
+
+
+        /* hover */
+
+        .edu-card:hover {
+            transform: translateY(-5px);
+
+            border-color: rgba(86, 255, 119, 0.8);
+
+            box-shadow:
+                0 0 25px rgba(62, 255, 100, 0.07),
+                0 15px 45px rgba(0, 0, 0, 0.4);
+        }
+
+
+        /* =========================================================
+   CARD TOP BAR
+========================================================= */
+
+        .edu-top {
+            position: relative;
+
+            z-index: 5;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 2px 2px 0;
+
+            color: #3e824b;
+
+            font-family: monospace;
+
+            font-size: 7px;
+
+            letter-spacing: 1.4px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* =========================================================
+   TRIANGLE CONTAINER
+========================================================= */
+
+        .triangle-ui {
+            position: relative;
+
+            width: 220px;
+
+            height: 205px;
+
+            margin: 17px auto 4px;
+        }
+
+
+        /* =========================================================
+   MAIN TRIANGLE
+========================================================= */
+
+        .triangle-ui::before {
+            content: "";
+
+            position: absolute;
+
+            left: 20px;
+
+            top: 2px;
+
+            width: 180px;
+
+            height: 180px;
+
+            clip-path:
+                polygon(50% 0%,
+                    100% 100%,
+                    0% 100%);
+
+            background:
+                linear-gradient(145deg,
+                    rgba(55, 255, 100, 0.055),
+                    rgba(8, 30, 13, 0.14));
+
+            border: 1px solid rgba(70, 255, 110, 0.36);
+
+            filter:
+                drop-shadow(0 0 7px rgba(70, 255, 110, 0.08));
+        }
+
+
+        /* =========================================================
+   TRIANGLE TOP
+========================================================= */
+
+        .triangle-top {
+            position: absolute;
+
+            top: 22px;
+
+            left: 70px;
+
+            width: 80px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            z-index: 4;
+
+            color: #63dc7b;
+        }
+
+
+        /* icon */
+
+        .triangle-top i {
+            margin-bottom: 6px;
+
+            color: #65e982;
+
+            font-size: 16px;
+
+            opacity: .9;
+        }
+
+
+        /* CLASS XII / JEE / UG */
+
+        .triangle-top span {
+            color: #62d879;
+
+            font-family: monospace;
+
+            font-size: 8px;
+
+            font-weight: 600;
+
+            letter-spacing: 1px;
+
+            white-space: nowrap;
+        }
+
+
+        /* =========================================================
+   REMOVE SIDE NODES
+   Maths / BSEB / Engineering / 2024 / AI & ML etc.
+========================================================= */
+
+        .education-section .triangle-left,
+        .education-section .triangle-right {
+            display: none !important;
+        }
+
+
+        /* =========================================================
+   CENTER VALUE
+========================================================= */
+
+        .triangle-center {
+            position: absolute;
+
+            left: 70px;
+
+            top: 87px;
+
+            width: 80px;
+
+            height: 67px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            z-index: 6;
+        }
+
+
+        /* =========================================================
+   MAIN VALUE
+========================================================= */
+
+        .triangle-center strong {
+            display: block;
+
+            color: #ff9d3d;
+
+            font-family: monospace;
+
+            font-size: 27px;
+
+            font-weight: 800;
+
+            line-height: 1;
+
+            letter-spacing: -.5px;
+
+            text-shadow:
+                0 0 10px rgba(255, 145, 45, 0.28);
+        }
+
+
+        /* AGGREGATE / PERCENTILE */
+
+        .triangle-center span {
+            display: block;
+
+            margin-top: 7px;
+
+            color: #c8752d;
+
+            font-family: monospace;
+
+            font-size: 7px;
+
+            font-weight: 600;
+
+            letter-spacing: 1.4px;
+
+            white-space: nowrap;
+        }
+
+
+        /* =========================================================
+   UNIVERSITY CENTER
+========================================================= */
+
+        .triangle-center.ug-center strong {
+            color: #ff9d3d;
+
+            font-size: 19px;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* =========================================================
+   HOVER CENTER
+========================================================= */
+
+        .edu-card:hover .triangle-center strong {
+            color: #ffb05b;
+
+            text-shadow:
+                0 0 12px rgba(255, 150, 55, 0.45),
+                0 0 25px rgba(255, 150, 55, 0.12);
+        }
+
+
+        /* =========================================================
+   BOTTOM EDUCATION INFORMATION
+========================================================= */
+
+        .edu-info {
+            position: relative;
+
+            z-index: 5;
+
+            margin-top: 0;
+
+            text-align: center;
+        }
+
+
+        /* Class XII / JEE Mains / B.Tech CSE */
+
+        .edu-info h3 {
+            margin: 0;
+
+            color: #e5e9e6;
+
+            font-size: 18px;
+
+            line-height: 1.3;
+
+            font-weight: 500;
+
+            letter-spacing: .1px;
+        }
+
+
+        /* Institution */
+
+        .edu-info p {
+            margin: 7px 0 0;
+
+            color: #667169;
+
+            font-family: monospace;
+
+            font-size: 9px;
+
+            line-height: 1.4;
+        }
+
+
+        /* =========================================================
+   UNIVERSITY CARD
+========================================================= */
+
+        .active-edu {
+            border-color: rgba(75, 255, 110, 0.52);
+
+            background:
+                linear-gradient(145deg,
+                    rgba(6, 15, 8, 1),
+                    rgba(1, 5, 2, 1));
+        }
+
+
+        /* =========================================================
+   FOOTER
+========================================================= */
+
+        .education-footer {
+            position: relative;
+
+            z-index: 2;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 13px;
+
+            margin-top: 38px;
+
+            color: #3f794b;
+
+            font-family: monospace;
+
+            font-size: 7px;
+
+            letter-spacing: 3px;
+        }
+
+
+        /* footer lines */
+
+        .education-footer i {
+            display: block;
+
+            width: 28px;
+
+            height: 1px;
+
+            background:
+                linear-gradient(90deg,
+                    transparent,
+                    #4a9858,
+                    transparent);
+        }
+
+
+        /* =========================================================
+   REMOVE OLD / UNWANTED TRIANGLE DETAILS
+========================================================= */
+
+        .education-section .triangle-left *,
+        .education-section .triangle-right * {
+            display: none !important;
+        }
+
+
+        /* =========================================================
+   TABLET
+========================================================= */
+
+        @media (max-width: 950px) {
+
+            .education-grid {
+                max-width: 720px;
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .edu-card:last-child {
+                grid-column: 1 / -1;
+
+                width: calc(50% - 8px);
+
+                margin: 0 auto;
+            }
+        }
+
+
+        /* =========================================================
+   MOBILE
+========================================================= */
+
+        @media (max-width: 650px) {
+
+            .education-section {
+                padding: 65px 18px 45px;
+            }
+
+            .education-header {
+                margin-bottom: 30px;
+            }
+
+            .education-header h2 {
+                font-size: 36px;
+            }
+
+            .education-grid {
+                grid-template-columns: 1fr;
+
+                max-width: 350px;
+
+                gap: 14px;
+            }
+
+            .edu-card {
+                width: 100% !important;
+
+                height: 330px;
+
+                grid-column: auto !important;
+            }
+
+            .education-footer {
+                margin-top: 30px;
+            }
+        }
+
+
+        /* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+        @media (max-width: 380px) {
+
+            .education-section {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            .edu-card {
+                height: 320px;
+            }
+
+            .education-header h2 {
+                font-size: 32px;
+            }
+
+            .triangle-ui {
+                transform: scale(.94);
+                transform-origin: center;
+            }
+
+            .edu-info h3 {
+                font-size: 17px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /* development tool css  */
+
+        /* =========================================================
+   DEVELOPMENT TOOLKIT
+   DARK TERMINAL / DEVCON STYLE
+========================================================= */
+
+        .toolkit-section {
+
+            position: relative;
+
+            width: 100%;
+
+            padding: 75px 5% 55px;
+
+            background:
+                radial-gradient(circle at 50% 20%,
+                    rgba(70, 255, 110, .035),
+                    transparent 38%),
+                #030603;
+
+            color: #fff;
+
+            overflow: hidden;
+        }
+
+
+        /* =========================================================
+   SUBTLE BACKGROUND GRID
+========================================================= */
+
+        .toolkit-section::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background-image:
+
+                linear-gradient(rgba(70, 255, 110, .015) 1px,
+                    transparent 1px),
+
+                linear-gradient(90deg,
+                    rgba(70, 255, 110, .015) 1px,
+                    transparent 1px);
+
+            background-size: 45px 45px;
+
+            pointer-events: none;
+        }
+
+
+        /* =========================================================
+   HEADER
+========================================================= */
+
+        .toolkit-header {
+
+            position: relative;
+
+            z-index: 2;
+
+            text-align: center;
+
+            margin-bottom: 42px;
+        }
+
+
+        /* small green label */
+
+        .toolkit-kicker {
+
+            display: block;
+
+            margin-bottom: 9px;
+
+            color: #5fe878;
+
+            font-family: monospace;
+
+            font-size: 9px;
+
+            font-weight: 700;
+
+            letter-spacing: 4px;
+        }
+
+
+        /* main heading */
+
+        .toolkit-header h2 {
+
+            margin: 0;
+
+            color: #eeeeee;
+
+            font-size: 42px;
+
+            line-height: 1.1;
+
+            font-weight: 600;
+        }
+
+
+        /* subtitle */
+
+        .toolkit-header p {
+
+            margin: 12px auto 0;
+
+            max-width: 720px;
+
+            color: #606b63;
+
+            font-family: monospace;
+
+            font-size: 10px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================================================
+   CATEGORY GRID
+========================================================= */
+
+        .toolkit-grid {
+
+            position: relative;
+
+            z-index: 2;
+
+            width: 100%;
+
+            max-width: 1250px;
+
+            margin: 0 auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 16px;
+        }
+
+
+        /* =========================================================
+   CATEGORY BOX
+========================================================= */
+
+        .tool-category {
+
+            position: relative;
+
+            min-height: 190px;
+
+            padding: 18px 20px;
+
+            background:
+                linear-gradient(145deg,
+                    rgba(6, 14, 8, .98),
+                    rgba(1, 4, 2, .99));
+
+            border:
+
+                1px solid rgba(72, 255, 110, .34);
+
+            overflow: hidden;
+
+            transition:
+
+                border-color .3s ease,
+                transform .3s ease,
+                box-shadow .3s ease;
+        }
+
+
+        /* inner border */
+
+        .tool-category::after {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 6px;
+
+            border:
+
+                1px solid rgba(80, 255, 120, .035);
+
+            pointer-events: none;
+        }
+
+
+        /* hover */
+
+        .tool-category:hover {
+
+            transform: translateY(-4px);
+
+            border-color:
+
+                rgba(85, 255, 120, .72);
+
+            box-shadow:
+
+                0 0 25px rgba(55, 255, 100, .05),
+
+                0 15px 35px rgba(0, 0, 0, .35);
+        }
+
+
+        /* =========================================================
+   CATEGORY HEADER
+========================================================= */
+
+        .category-header {
+
+            position: relative;
+
+            z-index: 3;
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 12px;
+        }
+
+
+        /* number */
+
+        .category-number {
+
+            padding-top: 2px;
+
+            color: #4c9658;
+
+            font-family: monospace;
+
+            font-size: 8px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* heading */
+
+        .category-header h3 {
+
+            margin: 0;
+
+            color: #e9eee9;
+
+            font-size: 17px;
+
+            font-weight: 600;
+
+            letter-spacing: .1px;
+        }
+
+
+        /* description */
+
+        .category-header p {
+
+            margin: 5px 0 0;
+
+            color: #566259;
+
+            font-family: monospace;
+
+            font-size: 8px;
+
+            line-height: 1.4;
+        }
+
+
+        /* =========================================================
+   TOOLS INSIDE CATEGORY
+========================================================= */
+
+        .tool-items {
+
+            position: relative;
+
+            z-index: 3;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            margin-top: 25px;
+        }
+
+
+        /* =========================================================
+   TOOL ITEM
+========================================================= */
+
+        .tool-item {
+
+            width: 105px;
+
+            min-height: 95px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 9px;
+
+            text-decoration: none;
+
+            background:
+
+                rgba(255, 255, 255, .018);
+
+            border:
+
+                1px solid rgba(75, 255, 110, .08);
+
+            transition:
+
+                transform .25s ease,
+                border-color .25s ease,
+                background .25s ease;
+        }
+
+
+        /* hover */
+
+        .tool-item:hover {
+
+            transform: translateY(-5px);
+
+            border-color:
+
+                rgba(75, 255, 110, .35);
+
+            background:
+
+                rgba(65, 255, 100, .035);
+        }
+
+
+        /* =========================================================
+   LOGO CONTAINER
+========================================================= */
+
+        .tool-logo {
+
+            width: 38px;
+
+            height: 38px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #62e87b;
+
+            font-size: 24px;
+
+            transition: .25s;
+        }
+
+
+        /* logo hover */
+
+        .tool-item:hover .tool-logo {
+
+            transform: scale(1.08);
+
+            color: #7dff94;
+        }
+
+
+        
+
+        /* =========================================================
+   GITHUB
+========================================================= */
+
+        .github-logo {
+
+            color: #f1f1f1;
+        }
+
+        .github-logo i {
+
+            font-size: 31px;
+        }
+
+
+        /* =========================================================
+   VS CODE
+========================================================= */
+
+        .vscode-logo {
+
+            color: #48a9ff;
+        }
+
+        .vscode-logo i {
+
+            font-size: 28px;
+        }
+
+
+        /* =========================================================
+   CURSOR
+========================================================= */
+
+        .cursor-logo {
+
+            color: #65e7ff;
+        }
+
+        .cursor-logo i {
+
+            font-size: 25px;
+        }
+
+
+        /* =========================================================
+   VERCEL
+========================================================= */
+
+        .vercel-logo {
+
+            color: #ffffff;
+
+            font-size: 28px;
+        }
+
+        .vercel-logo span {
+
+            font-size: 31px;
+
+            line-height: 1;
+        }
+
+
+        /* =========================================================
+   NETLIFY
+========================================================= */
+
+        .netlify-logo {
+
+            color: #4de0cc;
+
+            font-size: 27px;
+        }
+
+        .netlify-logo span {
+
+            transform:
+                rotate(45deg);
+
+            font-size: 22px;
+        }
+
+
+        /* =========================================================
+   IBM
+========================================================= */
+
+        .ibm-logo {
+
+            color: #4da6ff;
+
+            font-family: Arial, sans-serif;
+
+            font-weight: 900;
+
+            font-size: 15px;
+
+            letter-spacing: -1px;
+        }
+
+
+        /* =========================================================
+   KAGGLE
+========================================================= */
+
+        .kaggle-logo {
+
+            color: #20a8e8;
+
+            border:
+
+                1px solid rgba(32, 168, 232, .4);
+
+            border-radius: 50%;
+
+            width: 36px;
+
+            height: 36px;
+
+            font-family: Arial, sans-serif;
+
+            font-weight: 900;
+
+            font-size: 18px;
+        }
+
+
+        /* =========================================================
+   GOOGLE COLAB
+========================================================= */
+
+        .colab-logo {
+
+            color: #f9ab00;
+
+            font-size: 26px;
+        }
+
+
+        /* =========================================================
+   n8n
+========================================================= */
+
+        .n8n-logo {
+
+            color: #ff6b35;
+
+            border:
+
+                1px solid rgba(255, 107, 53, .35);
+
+            border-radius: 5px;
+
+            font-family: monospace;
+
+            font-size: 13px;
+
+            font-weight: 800;
+        }
+
+
+        /* =========================================================
+   LANGFLOW
+========================================================= */
+
+        .langflow-logo {
+
+            color: #a978ff;
+
+            border:
+
+                1px solid rgba(169, 120, 255, .35);
+
+            border-radius: 5px;
+
+            font-family: monospace;
+
+            font-size: 12px;
+
+            font-weight: 800;
+        }
+
+
+        /* =========================================================
+   TOOL NAME
+========================================================= */
+
+        .tool-item>span {
+
+            color: #aab5ad;
+
+            font-family: monospace;
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            text-align: center;
+        }
+
+
+        /* hover name */
+
+        .tool-item:hover>span {
+
+            color: #d8e5db;
+        }
+
+
+        /* =========================================================
+   FOOTER
+========================================================= */
+
+        .toolkit-footer {
+
+            position: relative;
+
+            z-index: 2;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            margin-top: 38px;
+
+            color: #3d7548;
+
+            font-family: monospace;
+
+            font-size: 7px;
+
+            letter-spacing: 3px;
+        }
+
+
+        .toolkit-footer i {
+
+            display: block;
+
+            width: 30px;
+
+            height: 1px;
+
+            background:
+
+                linear-gradient(90deg,
+                    transparent,
+                    #4c9758,
+                    transparent);
+        }
+
+
+        /* =========================================================
+   TABLET
+========================================================= */
+
+        @media (max-width: 850px) {
+
+            .toolkit-grid {
+
+                grid-template-columns: 1fr;
+
+                max-width: 650px;
+            }
+
+        }
+
+
+        /* =========================================================
+   MOBILE
+========================================================= */
+
+        @media (max-width: 500px) {
+
+            .toolkit-section {
+
+                padding:
+                    65px 14px 45px;
+            }
+
+
+            .toolkit-header h2 {
+
+                font-size: 34px;
+            }
+
+
+            .toolkit-header p {
+
+                font-size: 9px;
+            }
+
+
+            .tool-category {
+
+                min-height: 175px;
+
+                padding:
+                    16px 13px;
+            }
+
+
+            .category-header h3 {
+
+                font-size: 15px;
+            }
+
+
+            .tool-items {
+
+                gap: 8px;
+
+                flex-wrap: wrap;
+            }
+
+
+            .tool-item {
+
+                width: 92px;
+
+                min-height: 88px;
+            }
+
+        }
     </style>
+
+
 </head>
+
 <body>
 
     <nav class="flex justify-between items-center px-6 md:px-10 py-6 max-w-7xl mx-auto">
@@ -65,86 +3369,515 @@
         </div>
     </nav>
 
-    <section class="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-10 py-12 max-w-7xl mx-auto min-h-[70vh]">
+    <section
+        class="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-10 py-12 max-w-7xl mx-auto min-h-[70vh]">
         <div class="w-full md:w-1/2 space-y-6 mt-10 md:mt-0">
             <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
                 Hi all, Am Alka <span class="inline-block animate-bounce">👋</span>
             </h1>
             <p class="text-gray-400 text-lg leading-relaxed max-w-xl">
-                An AI & ML undergraduate skilled in Backend Development, Full-Stack Engineering, and Data Structures & Algorithms. Experienced in building scalable web applications, REST APIs, and AI-powered automation workflows.
+                An AI & ML undergraduate skilled in Backend Development, Full-Stack Engineering, and Data Structures &
+                Algorithms. Experienced in building scalable web applications, REST APIs, and AI-powered automation
+                workflows.
             </p>
-            
+
             <div class="flex flex-wrap gap-4 pt-2">
-                <a href="https://github.com/alkaraikwar" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="GitHub">
+                <a href="https://github.com/alkaraikwar" target="_blank" rel="noopener noreferrer"
+                    class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block"
+                    title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/alka-raikwar-971b91307/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/alka-raikwar-971b91307/" target="_blank" rel="noopener noreferrer"
+                    class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block"
+                    title="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://leetcode.com/u/Alka_Raikwar3/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-yellow-600 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="LeetCode">
+                <a href="https://leetcode.com/u/Alka_Raikwar3/" target="_blank" rel="noopener noreferrer"
+                    class="w-10 h-10 rounded-full bg-yellow-600 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block"
+                    title="LeetCode">
                     <i class="fas fa-code"></i>
                 </a>
-                <a href="https://codeforces.com/profile/alkaraikbar" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-lg hover:bg-purple-600 transition text-white block" title="Codeforces">
+                <a href="https://codeforces.com/profile/alkaraikbar" target="_blank" rel="noopener noreferrer"
+                    class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-lg hover:bg-purple-600 transition text-white block"
+                    title="Codeforces">
                     <i class="si si-codeforces"></i>
                 </a>
-                <a href="mailto:alkaraikbar755@gmail.com" class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="Email">
+                <a href="mailto:alkaraikbar755@gmail.com"
+                    class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block"
+                    title="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
 
             <div class="flex space-x-4 pt-4">
-                <a href="mailto:alkaraikbar755@gmail.com" class="bg-purple-700 hover:bg-purple-600 text-white font-semibold px-6 py-3 rounded transition shadow-lg">CONTACT ME</a>
-                <a href="https://lustrous-fudge-cc41eb.netlify.app" target="_blank" rel="noopener noreferrer" class="bg-purple-900 hover:bg-purple-800 text-purple-200 font-semibold px-6 py-3 rounded transition border border-purple-700">VIEW LIVE PROJECT</a>
+                <a href="mailto:alkaraikbar755@gmail.com"
+                    class="bg-purple-700 hover:bg-purple-600 text-white font-semibold px-6 py-3 rounded transition shadow-lg">CONTACT
+                    ME</a>
+                <a href="https://lustrous-fudge-cc41eb.netlify.app" target="_blank" rel="noopener noreferrer"
+                    class="bg-purple-900 hover:bg-purple-800 text-purple-200 font-semibold px-6 py-3 rounded transition border border-purple-700">VIEW
+                    LIVE PROJECT</a>
             </div>
         </div>
 
-       
-            <div class="port_image">
-                 <div class="image"></div>
-            </div>
-            <!-- <div class="w-72 h-72 md:w-96 md:h-96 rounded-2xl border-4 border-purple-500 overflow-hidden shadow-2xl shadow-purple-500/20 transform hover:scale-105 transition duration-300"   style="border-radius: 50%; ";> -->
-                <!-- <img src="portfolio_img.jpg" alt="Alka Raikwar" class="w-full h-full object-cover object-top"> -->
 
-            
-    
-    </section>
-
-    <section id="skills" class="px-6 md:px-10 py-16 max-w-7xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-2">What I Do</h2>
-        <p class="text-purple-400 text-center uppercase tracking-widest font-semibold text-sm mb-12">AI & ML Engineer / Backend Developer</p>
-
-        <div class="flex flex-col md:flex-row items-center justify-between gap-10">
-            <div class="w-full md:w-1/2 flex justify-center">
-                <svg class="w-3/4 h-auto text-indigo-500" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="40" y="50" width="120" height="80" rx="5" fill="#312e81"/>
-                    <rect x="30" y="130" width="140" height="10" rx="2" fill="#4338ca"/>
-                    <circle cx="100" cy="90" r="20" fill="#6366f1"/>
-                </svg>
-            </div>
-
-            <div class="w-full md:w-1/2 space-y-6">
-                <div class="grid grid-cols-5 gap-6 text-center text-4xl text-gray-400">
-                    <div class="hover:text-blue-400 transition"><i class="fab fa-python"></i><p class="text-xs mt-1">Python</p></div>
-                    <div class="hover:text-orange-500 transition"><i class="fab fa-java"></i><p class="text-xs mt-1">Java</p></div>
-                    <div class="hover:text-yellow-500 transition"><i class="fab fa-js"></i><p class="text-xs mt-1">JavaScript</p></div>
-                    <div class="hover:text-green-500 transition"><i class="fas fa-brain"></i><p class="text-xs mt-1">LLMs</p></div>
-                    <div class="hover:text-blue-500 transition"><i class="fab fa-react"></i><p class="text-xs mt-1">React</p></div>
-                </div>
-
-                <div class="space-y-3 pt-4 text-gray-300">
-                    <p class="flex items-start"><span class="text-purple-500 mr-2" style="height: 30px;width:30px;background-image: url(lo.png); border-radius: 50%;"></span> Developing clean backend workflows and REST APIs using Django, Flask, and Node.js.</p>
-                    <p class="flex items-start"><span class="text-purple-500 mr-2" style="height: 30px;width:30px;background-image: url(lo.png); border-radius: 50%;"></span> Automating complex workflows and integrating large language models like Llama3.</p>
-                    <p class="flex items-start"><span class="text-purple-500 mr-2" style="height: 30px;width:30px;background-image: url(lo.png); border-radius: 50%;"></span> Solving architectural & computational problems with strong Data Structures foundations.</p>
-                </div>
-            </div>
+        <div class="port_image">
+            <div class="image"></div>
         </div>
+        <!-- <div class="w-72 h-72 md:w-96 md:h-96 rounded-2xl border-4 border-purple-500 overflow-hidden shadow-2xl shadow-purple-500/20 transform hover:scale-105 transition duration-300"   style="border-radius: 50%; ";> -->
+        <!-- <img src="portfolio_img.jpg" alt="Alka Raikwar" class="w-full h-full object-cover object-top"> -->
+
+
+
     </section>
 
+    <!-- =========================
+     SKILLS / TECH STACK
+========================= -->
+
+    <section id="skills" class="skills-section">
+
+        <div class="skills-header">
+            <span class="section-kicker">TECHNICAL CAPABILITIES</span>
+            <h2>My Tech Stack & <span>Skills</span></h2>
+            <p>
+                Building AI systems, backend architectures and modern web applications
+                with a strong foundation in computer science.
+            </p>
+        </div>
+
+
+        <div class="skills-grid">
+
+            <!-- ================= BACKEND ================= -->
+
+            <article class="skill-card backend-card">
+
+                <div class="skill-title">
+                    <span class="title-number">01</span>
+                    <div>
+                        <h3>Backend Engineering</h3>
+                        <p>APIs • Services • Server-side systems</p>
+                    </div>
+                </div>
+
+                <div class="skill-network">
+
+                    <div class="skill-node node-top-left">
+                        <img src="https://cdn.simpleicons.org/django/ffffff" alt="Django">
+                        <span>Django</span>
+                    </div>
+
+                    <div class="skill-node node-top-right">
+                        <img src="https://cdn.simpleicons.org/flask/ffffff" alt="Flask">
+                        <span>Flask</span>
+                    </div>
+
+                    <div class="skill-core">
+                        <img src="https://cdn.simpleicons.org/python/FFD43B" alt="Python">
+                        <strong>Python</strong>
+                        <small>Backend</small>
+                    </div>
+
+                    <div class="skill-node node-bottom">
+                        <span class="text-logo">API</span>
+                        <span>REST APIs</span>
+                    </div>
+
+                </div>
+
+                <div class="skill-tags">
+                    <span>Django</span>
+                    <span>Flask</span>
+                    <span>FastAPI</span>
+                    <span>REST</span>
+                </div>
+
+            </article>
+
+
+            <!-- ================= DATABASE ================= -->
+
+            <article class="skill-card database-card">
+
+                <div class="skill-title">
+                    <span class="title-number">02</span>
+                    <div>
+                        <h3>Database Engineering</h3>
+                        <p>Data storage • Querying • Optimization</p>
+                    </div>
+                </div>
+
+                <div class="skill-network">
+
+                    <div class="skill-node node-top-left">
+                        <img src="https://cdn.simpleicons.org/postgresql/ffffff" alt="PostgreSQL">
+                        <span>PostgreSQL</span>
+                    </div>
+
+                    <div class="skill-node node-top-right">
+                        <img src="https://cdn.simpleicons.org/sqlite/ffffff" alt="SQLite">
+                        <span>SQLite</span>
+                    </div>
+
+                    <div class="skill-core">
+                        <span class="core-text-logo">SQL</span>
+                        <strong>SQL</strong>
+                        <small>Databases</small>
+                    </div>
+
+                    <div class="skill-node node-bottom">
+                        <span class="text-logo">IDX</span>
+                        <span>Indexing</span>
+                    </div>
+
+                </div>
+
+                <div class="skill-tags">
+                    <span>PostgreSQL</span>
+                    <span>SQLite</span>
+                    <span>Indexing</span>
+                    <span>Query Optimization</span>
+                </div>
+
+            </article>
+
+
+            <!-- ================= WEB / MERN ================= -->
+
+            <article class="skill-card web-card">
+
+                <div class="skill-title">
+                    <span class="title-number">03</span>
+                    <div>
+                        <h3>Modern Web Development</h3>
+                        <p>Frontend • UI • Web applications</p>
+                    </div>
+                </div>
+
+                <div class="skill-network">
+
+                    <div class="skill-node node-top-left">
+                        <img src="https://cdn.simpleicons.org/html5/ffffff" alt="HTML5">
+                        <span>HTML5</span>
+                    </div>
+
+                    <div class="skill-node node-top-right">
+                        <img src="https://cdn.simpleicons.org/css3/ffffff" alt="CSS3">
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="skill-core react-core">
+                        <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React">
+                        <strong>React</strong>
+                        <small>Frontend</small>
+                    </div>
+
+                    <div class="skill-node node-bottom">
+                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+                <div class="skill-tags">
+                    <span>React.js</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </article>
+
+
+            <!-- ================= AI ML ================= -->
+
+            <article class="skill-card ai-card">
+
+                <div class="skill-title">
+                    <span class="title-number">04</span>
+                    <div>
+                        <h3>AI / Machine Learning</h3>
+                        <p>Models • Training • Intelligent systems</p>
+                    </div>
+                </div>
+
+                <div class="skill-network">
+
+                    <div class="skill-node node-top-left">
+                        <span class="mini-ai">ML</span>
+                        <span>Machine Learning</span>
+                    </div>
+
+                    <div class="skill-node node-top-right">
+                        <span class="mini-ai">DL</span>
+                        <span>Deep Learning</span>
+                    </div>
+
+                    <div class="skill-core ai-core">
+                        <span class="ai-symbol">AI</span>
+                        <strong>AI / ML</strong>
+                        <small>Model Building</small>
+                    </div>
+
+                    <div class="skill-node node-bottom">
+                        <span class="mini-ai">LLM</span>
+                        <span>LLMs</span>
+                    </div>
+
+                </div>
+
+                <div class="skill-tags">
+                    <span>Scikit-learn</span>
+                    <span>NumPy</span>
+                    <span>Pandas</span>
+                    <span>Model Training</span>
+                    <span>Agentic AI</span>
+                </div>
+
+            </article>
+
+
+            <!-- ================= GEN AI ================= -->
+
+            <article class="skill-card genai-card">
+
+                <div class="skill-title">
+                    <span class="title-number">05</span>
+                    <div>
+                        <h3>LLMs & Agentic AI</h3>
+                        <p>Generative AI • Agents • Automation</p>
+                    </div>
+                </div>
+
+                <div class="skill-network">
+
+                    <div class="skill-node node-top-left">
+                        <span class="mini-ai">L3</span>
+                        <span>Llama 3</span>
+                    </div>
+
+                    <div class="skill-node node-top-right">
+                        <span class="mini-ai">G</span>
+                        <span>Granite</span>
+                    </div>
+
+                    <div class="skill-core genai-core">
+                        <span class="ai-symbol">✦</span>
+                        <strong>GenAI</strong>
+                        <small>Agentic Systems</small>
+                    </div>
+
+                    <div class="skill-node node-bottom">
+                        <span class="mini-ai">N8N</span>
+                        <span>Automation</span>
+                    </div>
+
+                </div>
+
+                <div class="skill-tags">
+                    <span>Llama 3</span>
+                    <span>IBM Granite</span>
+                    <span>Agentic AI</span>
+                    <span>N8N</span>
+                </div>
+
+            </article>
+
+
+            <!-- ================= CLOUD ================= -->
+
+            <article class="skill-card cloud-card">
+
+                <div class="skill-title">
+                    <span class="title-number">06</span>
+                    <div>
+                        <h3>Cloud & AI Platforms</h3>
+                        <p>Cloud infrastructure • AI platforms</p>
+                    </div>
+                </div>
+
+                <div class="skill-network">
+
+                    <div class="skill-node node-top-left">
+                        <span class="platform-logo">IBM</span>
+                        <span>IBM Cloud</span>
+                    </div>
+
+                    <div class="skill-node node-top-right">
+                        <span class="platform-logo azure">AZ</span>
+                        <span>Azure</span>
+                    </div>
+
+                    <div class="skill-core cloud-core">
+                        <span class="cloud-symbol">☁</span>
+                        <strong>Cloud</strong>
+                        <small>AI Platforms</small>
+                    </div>
+
+                    <div class="skill-node node-bottom">
+                        <span class="platform-logo">WX</span>
+                        <span>watsonx</span>
+                    </div>
+
+                </div>
+
+                <div class="skill-tags">
+                    <span>IBM Cloud</span>
+                    <span>IBM watsonx</span>
+                    <span>Azure Cloud</span>
+                    <span>IBM Bob</span>
+                </div>
+
+            </article>
+
+
+            <!-- ================= PROGRAMMING ================= -->
+
+            <article class="skill-card programming-card">
+
+                <div class="skill-title">
+                    <span class="title-number">07</span>
+                    <div>
+                        <h3>Programming</h3>
+                        <p>Problem solving • Software development</p>
+                    </div>
+                </div>
+
+                <div class="language-row">
+
+                    <div class="language-item">
+                        <img src="https://cdn.simpleicons.org/python/FFD43B" alt="Python">
+                        <span>Python</span>
+                    </div>
+
+                    <div class="language-item">
+                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="language-item">
+                        <img src="https://cdn.simpleicons.org/java/ffffff" alt="Java">
+                        <span>Java</span>
+                    </div>
+
+                    <div class="language-item">
+                        <span class="c-logo">C</span>
+                        <span>C</span>
+                    </div>
+
+                    <div class="language-item">
+                        <span class="sql-logo">SQL</span>
+                        <span>SQL</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= DEVOPS ================= -->
+
+            <article class="skill-card tools-card">
+
+                <div class="skill-title">
+                    <span class="title-number">08</span>
+                    <div>
+                        <h3>Development Tools</h3>
+                        <p>Version control • Development workflow</p>
+                    </div>
+                </div>
+
+                <div class="tool-row">
+
+                    <div class="tool-item">
+                        <img src="https://cdn.simpleicons.org/git/F05032" alt="Git">
+                        <span>Git</span>
+                    </div>
+
+                    <div class="tool-item">
+                        <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub">
+                        <span>GitHub</span>
+                    </div>
+
+                    <div class="tool-item">
+                        <img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" alt="VS Code">
+                        <span>VS Code</span>
+                    </div>
+
+                    <div class="tool-item">
+                        <span class="ai-tool">AI</span>
+                        <span>AI-assisted Dev</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= CORE CS ================= -->
+
+            <article class="skill-card core-card">
+
+                <div class="skill-title">
+                    <span class="title-number">09</span>
+                    <div>
+                        <h3>Core Computer Science</h3>
+                        <p>Foundations behind the systems I build</p>
+                    </div>
+                </div>
+
+                <div class="core-grid">
+
+                    <div>
+                        <strong>DSA</strong>
+                        <span>Data Structures & Algorithms</span>
+                    </div>
+
+                    <div>
+                        <strong>OOP</strong>
+                        <span>Object-Oriented Programming</span>
+                    </div>
+
+                    <div>
+                        <strong>DBMS</strong>
+                        <span>Database Management</span>
+                    </div>
+
+                    <div>
+                        <strong>OS</strong>
+                        <span>Operating Systems</span>
+                    </div>
+
+                    <div>
+                        <strong>CN</strong>
+                        <span>Computer Networks</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- Bottom statement -->
+
+        <div class="skills-footer">
+            <span>BUILD</span>
+            <i></i>
+            <span>TRAIN</span>
+            <i></i>
+            <span>DEPLOY</span>
+            <i></i>
+            <span>SOLVE</span>
+        </div>
+
+    </section>
     <section class="px-6 md:px-10 py-12 max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row items-center justify-between gap-10">
             <div class="w-full md:w-1/2 space-y-6">
                 <h2 class="text-4xl font-bold mb-6">Proficiency</h2>
-                
+
                 <div class="space-y-4">
                     <div>
                         <p class="text-sm font-semibold mb-2">Backend & Logic Development</p>
@@ -168,36 +3901,42 @@
             </div>
             <div class="w-full md:w-1/2 flex justify-center">
                 <svg class="w-2/3 h-auto" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="20" y="40" width="160" height="100" rx="6" fill="#1e1b4b" stroke="#4338ca" stroke-width="4"/>
-                    <path d="M50 140 L40 170 L160 170 L150 140 Z" fill="#312e81"/>
-                    <circle cx="70" cy="80" r="15" fill="#818cf8"/>
-                    <circle cx="130" cy="100" r="10" fill="#a78bfa"/>
+                    <rect x="20" y="40" width="160" height="100" rx="6" fill="#1e1b4b" stroke="#4338ca"
+                        stroke-width="4" />
+                    <path d="M50 140 L40 170 L160 170 L150 140 Z" fill="#312e81" />
+                    <circle cx="70" cy="80" r="15" fill="#818cf8" />
+                    <circle cx="130" cy="100" r="10" fill="#a78bfa" />
                 </svg>
             </div>
         </div>
     </section>
 
 
-<!-- START OF AI-ASSISTED DEVELOPMENT SECTION -->
+    <!-- START OF AI-ASSISTED DEVELOPMENT SECTION -->
     <section id="ai-cooperation" class="px-6 md:px-10 py-16 max-w-7xl mx-auto border-t border-gray-800">
         <h2 class="text-4xl font-bold text-center mb-2">Be Comfortable Using AI-Assisted Development Tools</h2>
-        <p class="text-purple-400 text-center uppercase tracking-widest font-semibold text-sm mb-12">The Modern SDLC Engineering Paradigm (Human-AI Co-Pilot Workflow)</p>
+        <p class="text-purple-400 text-center uppercase tracking-widest font-semibold text-sm mb-12">The Modern SDLC
+            Engineering Paradigm (Human-AI Co-Pilot Workflow)</p>
 
         <!-- SDLC Pipeline Diagram / Timeline -->
         <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-16 relative">
-            
+
             <!-- Phase 1 -->
-            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300">
+            <div
+                class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <span class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-950/50 px-2.5 py-1 rounded-md border border-purple-800/60">Phase 01</span>
+                        <span
+                            class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-950/50 px-2.5 py-1 rounded-md border border-purple-800/60">Phase
+                            01</span>
                         <div class="text-2xl text-blue-400 flex gap-2">
                             <i class="fas fa-robot" title="ChatGPT/Gemini"></i>
                         </div>
                     </div>
                     <h3 class="font-bold text-lg text-gray-100 mb-1">Feasibility & Analysis</h3>
                     <p class="text-xs text-purple-300/80 mb-3 font-medium">Tools: ChatGPT, Gemini Advanced</p>
-                    <p class="text-gray-400 text-xs leading-relaxed">Formatting raw ideas into strict technical requirements, system design blueprints, and selecting concrete data schemas.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Formatting raw ideas into strict technical
+                        requirements, system design blueprints, and selecting concrete data schemas.</p>
                 </div>
                 <div class="mt-4 pt-3 border-t border-gray-800/60 text-[11px] flex justify-between">
                     <span class="text-emerald-400 font-medium">🧔 Human: 80%</span>
@@ -206,17 +3945,21 @@
             </div>
 
             <!-- Phase 2 -->
-            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300">
+            <div
+                class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <span class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-950/50 px-2.5 py-1 rounded-md border border-purple-800/60">Phase 02</span>
+                        <span
+                            class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-950/50 px-2.5 py-1 rounded-md border border-purple-800/60">Phase
+                            02</span>
                         <div class="text-2xl text-orange-400">
                             <i class="fas fa-wand-magic-sparkles" title="v0.dev"></i>
                         </div>
                     </div>
                     <h3 class="font-bold text-lg text-gray-100 mb-1">Rapid Prototyping</h3>
                     <p class="text-xs text-purple-300/80 mb-3 font-medium">Tools: v0.dev (Vercel), Caffeine.ai</p>
-                    <p class="text-gray-400 text-xs leading-relaxed">Converting text descriptions into interactive, components-based user interface layers within minutes for real-time validation.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Converting text descriptions into interactive,
+                        components-based user interface layers within minutes for real-time validation.</p>
                 </div>
                 <div class="mt-4 pt-3 border-t border-gray-800/60 text-[11px] flex justify-between">
                     <span class="text-emerald-400 font-medium">🧔 Human: 30%</span>
@@ -225,17 +3968,21 @@
             </div>
 
             <!-- Phase 3 -->
-            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300 ring-1 ring-purple-500/30 shadow-lg shadow-purple-500/5">
+            <div
+                class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300 ring-1 ring-purple-500/30 shadow-lg shadow-purple-500/5">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <span class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-500 text-white px-2.5 py-1 rounded-md">Phase 03</span>
+                        <span
+                            class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-500 text-white px-2.5 py-1 rounded-md">Phase
+                            03</span>
                         <div class="text-2xl text-purple-400 flex gap-2">
                             <i class="fas fa-terminal" title="Cursor / Claude Code"></i>
                         </div>
                     </div>
                     <h3 class="font-bold text-lg text-purple-300 mb-1">Core Development</h3>
                     <p class="text-xs text-purple-400/80 mb-3 font-medium">Tools: Cursor IDE, Claude Code (CLI)</p>
-                    <p class="text-gray-400 text-xs leading-relaxed">Writing complex full-stack logic, implementing backend routing, database queries, and offloading heavy boilerplate structure typing.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Writing complex full-stack logic, implementing
+                        backend routing, database queries, and offloading heavy boilerplate structure typing.</p>
                 </div>
                 <div class="mt-4 pt-3 border-t border-gray-800/60 text-[11px] flex justify-between">
                     <span class="text-emerald-400 font-medium">🧔 Human: 25%</span>
@@ -244,17 +3991,21 @@
             </div>
 
             <!-- Phase 4 -->
-            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300">
+            <div
+                class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <span class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-950/50 px-2.5 py-1 rounded-md border border-purple-800/60">Phase 04</span>
+                        <span
+                            class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-950/50 px-2.5 py-1 rounded-md border border-purple-800/60">Phase
+                            04</span>
                         <div class="text-2xl text-red-400">
                             <i class="fas fa-bug" title="Postman AI"></i>
                         </div>
                     </div>
                     <h3 class="font-bold text-lg text-gray-100 mb-1">QA & Verification</h3>
                     <p class="text-xs text-purple-300/80 mb-3 font-medium">Tools: Postman AI (Postbot)</p>
-                    <p class="text-gray-400 text-xs leading-relaxed">Automating regression suite writing, generating continuous execution unit tests, and verifying API data reliability maps.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Automating regression suite writing, generating
+                        continuous execution unit tests, and verifying API data reliability maps.</p>
                 </div>
                 <div class="mt-4 pt-3 border-t border-gray-800/60 text-[11px] flex justify-between">
                     <span class="text-emerald-400 font-medium">🧔 Human: 40%</span>
@@ -263,17 +4014,21 @@
             </div>
 
             <!-- Phase 5 -->
-            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300">
+            <div
+                class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <span class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-950/50 px-2.5 py-1 rounded-md border border-purple-800/60">Phase 05</span>
+                        <span
+                            class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-950/50 px-2.5 py-1 rounded-md border border-purple-800/60">Phase
+                            05</span>
                         <div class="text-2xl text-teal-400">
                             <i class="fas fa-server" title="GitHub Actions AI"></i>
                         </div>
                     </div>
                     <h3 class="font-bold text-lg text-gray-100 mb-1">CI/CD & DevOps</h3>
                     <p class="text-xs text-purple-300/80 mb-3 font-medium">Tools: GitHub Actions AI</p>
-                    <p class="text-gray-400 text-xs leading-relaxed">Compiling server configurations, optimizing environment script blocks, and self-healing deployment workflows.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Compiling server configurations, optimizing
+                        environment script blocks, and self-healing deployment workflows.</p>
                 </div>
                 <div class="mt-4 pt-3 border-t border-gray-800/60 text-[11px] flex justify-between">
                     <span class="text-emerald-400 font-medium">🧔 Human: 50%</span>
@@ -283,55 +4038,275 @@
 
         </div>
 
-       <!-- The Human Core Value Pitch (What I bring to table) -->
-        <div class="bg-gradient-to-r from-[#1e2330] to-[#251e35] p-6 md:p-8 rounded-2xl border border-purple-900/40 relative overflow-hidden shadow-xl">
+        <!-- The Human Core Value Pitch (What I bring to table) -->
+        <div
+            class="bg-gradient-to-r from-[#1e2330] to-[#251e35] p-6 md:p-8 rounded-2xl border border-purple-900/40 relative overflow-hidden shadow-xl">
             <div class="absolute top-0 right-0 p-4 opacity-10 text-7xl text-purple-400 pointer-events-none">
                 <i class="fas fa-shield-halved"></i>
             </div>
-            
+
             <h3 class="text-xl md:text-2xl font-bold text-gray-100 mb-4 flex items-center gap-2">
-                <i class="fas fa-user-check text-emerald-400 text-lg"></i> My Personal Experience using Ai-Tools: Where AI Stops, I Take Control
+                <i class="fas fa-user-check text-emerald-400 text-lg"></i> My Personal Experience using Ai-Tools: Where
+                AI Stops, I Take Control
             </h3>
-            
+
             <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-4xl">
-                I do not treat AI as a replacement for software engineering fundamentals; I use it strictly as an execution accelerator. While AI engines write heavy syntactical blocks at scale, my ownership lies entirely within the core evaluation boundaries:
+                <!-- I do not treat AI as a replacement for software engineering fundamentals; I use it strictly as an execution accelerator. While AI engines write heavy syntactical blocks at scale, my ownership lies entirely within the core evaluation boundaries: -->
             </p>
 
+          <!-- =========================================================
+     IBM AI DEVELOPMENT EXPERIENCE
+========================================================= -->
+
+<section id="ibm-ai-experience" class="ibm-experience">
+
+    <div class="ibm-exp-header">
+
+        <span>MY IBM AI DEVELOPMENT WORKFLOW</span>
+
+        <h2>
+            From AI-Assisted Development to Live Deployment
+        </h2>
+
+        <p>
+            How I used IBM's AI ecosystem to build, review, integrate,
+            and deploy a real-world application.
+        </p>
+
+    </div>
 
 
-          <div class="ai-tools-head">
-    <span class="ai-tools-title">AI-Assisted Development Tools:</span> 
-    Leveraged Cursor AI and v0.dev for rapid UI prototyping and architectural scaffolding while utilizing AI-assisted debugging and Postman AI for automated test generation, driving a 40% reduction in development cycles and ensuring 95% API reliability.
-</div>
+    <!-- WORKFLOW -->
+
+    <div class="ibm-workflow">
+
+
+        <!-- 01 -->
+
+        <div class="ibm-step">
+
+            <div class="ibm-step-number">01</div>
+
+            <div class="ibm-step-icon">
+                <i class="fas fa-robot"></i>
+            </div>
+
+            <div class="ibm-step-content">
+
+                <span class="ibm-step-label">DEVELOPMENT</span>
+
+                <h3>IBM Bob Agent</h3>
+
+                <p>
+                    Used IBM Bob Agent to develop the application
+                    and accelerate the implementation of core features.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="ibm-connector">
+            <span>→</span>
+        </div>
+
+
+        <!-- 02 -->
+
+        <div class="ibm-step">
+
+            <div class="ibm-step-number">02</div>
+
+            <div class="ibm-step-icon">
+                <i class="fas fa-user-check"></i>
+            </div>
+
+            <div class="ibm-step-content">
+
+                <span class="ibm-step-label">HUMAN CONTROL</span>
+
+                <h3>Monitor & Review</h3>
+
+                <p>
+                    Personally reviewed the generated implementation,
+                    monitored features, and kept the development aligned
+                    with the project target.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="ibm-connector">
+            <span>→</span>
+        </div>
+
+
+        <!-- 03 -->
+
+        <div class="ibm-step">
+
+            <div class="ibm-step-number">03</div>
+
+            <div class="ibm-step-icon">
+                <i class="fas fa-brain"></i>
+            </div>
+
+            <div class="ibm-step-content">
+
+                <span class="ibm-step-label">LLM</span>
+
+                <h3>IBM Granite</h3>
+
+                <p>
+                    Integrated IBM Granite as the Large Language Model
+                    powering the AI capabilities of the application.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="ibm-connector">
+            <span>→</span>
+        </div>
+
+
+        <!-- 04 -->
+
+        <div class="ibm-step">
+
+            <div class="ibm-step-number">04</div>
+
+            <div class="ibm-step-icon">
+                <i class="fas fa-layer-group"></i>
+            </div>
+
+            <div class="ibm-step-content">
+
+                <span class="ibm-step-label">AI PLATFORM</span>
+
+                <h3>IBM watsonx.ai</h3>
+
+                <p>
+                    Used IBM watsonx.ai to integrate IBM Granite
+                    into the application and connect the AI layer
+                    with the overall workflow.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="ibm-connector">
+            <span>→</span>
+        </div>
+
+
+        <!-- 05 -->
+
+        <div class="ibm-step">
+
+            <div class="ibm-step-number">05</div>
+
+            <div class="ibm-step-icon">
+                <i class="fas fa-cloud-upload-alt"></i>
+            </div>
+
+            <div class="ibm-step-content">
+
+                <span class="ibm-step-label">DEPLOYMENT</span>
+
+                <h3>IBM Cloud / Streamlit</h3>
+
+                <p>
+                    Deployed the final application using IBM Cloud /
+                    Streamlit and made the working system accessible
+                    as a live application.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- LIVE PROJECT -->
+
+    <div class="ibm-live-project">
+
+        <div class="live-status">
+            <span class="live-dot"></span>
+            LIVE PROJECT
+        </div>
+
+        <h3>
+            FloodGuard AI
+        </h3>
+
+        <p>
+            AI-powered flood response and management application
+            built using the IBM AI ecosystem.
+        </p>
+
+        <a
+            href="https://floodguard-ai.streamlit.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="live-project-btn"
+        >
+            <i class="fas fa-external-link-alt"></i>
+            View Live Application
+        </a>
+
+    </div>
+
+</section>
+
+            <div class="ai-tools-head">
+                <span class="ai-tools-title">AI-Assisted Development Tools:</span>
+                <!-- Leveraged Cursor AI and v0.dev for rapid UI prototyping and architectural scaffolding while utilizing AI-assisted debugging and Postman AI for automated test generation, driving a 40% reduction in development cycles and ensuring 95% API reliability. -->
+            </div>
             <!-- VISUAL PIPELINE DIVS START HERE -->
             <div class="grid grid-cols-1 md:grid-cols-5 gap-3 text-center">
-                
+
                 <!-- Step 1 -->
-                <div class="bg-[#151922]/60 p-4 rounded-xl border border-gray-800/80 flex flex-col justify-center items-center backdrop-blur-sm">
-                    <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Feasibility & Analysis</span>
+                <div
+                    class="bg-[#151922]/60 p-4 rounded-xl border border-gray-800/80 flex flex-col justify-center items-center backdrop-blur-sm">
+                    <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Feasibility &
+                        Analysis</span>
                     <div class="text-sm font-semibold text-purple-400">ChatGPT / Gemini</div>
                 </div>
 
                 <!-- Step 2 -->
-                <div class="bg-[#151922]/60 p-4 rounded-xl border border-gray-800/80 flex flex-col justify-center items-center backdrop-blur-sm">
+                <div
+                    class="bg-[#151922]/60 p-4 rounded-xl border border-gray-800/80 flex flex-col justify-center items-center backdrop-blur-sm">
                     <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Prototyping</span>
                     <div class="text-sm font-semibold text-orange-400">v0.dev</div>
                 </div>
 
                 <!-- Step 3 -->
-                <div class="bg-[#151922]/60 p-4 rounded-xl border border-purple-900/50 flex flex-col justify-center items-center backdrop-blur-sm ring-1 ring-purple-500/10">
+                <div
+                    class="bg-[#151922]/60 p-4 rounded-xl border border-purple-900/50 flex flex-col justify-center items-center backdrop-blur-sm ring-1 ring-purple-500/10">
                     <span class="text-xs font-bold text-purple-300 uppercase tracking-wider mb-1">Development</span>
                     <div class="text-sm font-semibold text-purple-300">Cursor / Claude Code</div>
                 </div>
 
                 <!-- Step 4 -->
-                <div class="bg-[#151922]/60 p-4 rounded-xl border border-gray-800/80 flex flex-col justify-center items-center backdrop-blur-sm">
+                <div
+                    class="bg-[#151922]/60 p-4 rounded-xl border border-gray-800/80 flex flex-col justify-center items-center backdrop-blur-sm">
                     <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Testing</span>
                     <div class="text-sm font-semibold text-red-400">Postman AI</div>
                 </div>
 
                 <!-- Step 5 -->
-                <div class="bg-[#151922]/60 p-4 rounded-xl border border-gray-800/80 flex flex-col justify-center items-center backdrop-blur-sm">
+                <div
+                    class="bg-[#151922]/60 p-4 rounded-xl border border-gray-800/80 flex flex-col justify-center items-center backdrop-blur-sm">
                     <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Deployment/CI-CD</span>
                     <div class="text-sm font-semibold text-teal-400">GitHub Actions AI</div>
                 </div>
@@ -351,46 +4326,360 @@
 
 
 
+    
+
+
+
+
+
+    <!-- =========================================================
+     DEVELOPMENT TOOLKIT
+========================================================= -->
+
+    <section id="learning-toolkit" class="toolkit-section">
+
+        <!-- HEADER -->
+        <div class="toolkit-header">
+
+            <span class="toolkit-kicker">
+                TOOLS • WORKFLOW • BUILD
+            </span>
+
+            <h2>
+                Development Toolkit
+            </h2>
+
+            <p>
+                Tools I actually use to build, train, deploy and automate AI/ML applications.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================================
+         TOOL CATEGORIES
+    ====================================================== -->
+
+        <div class="toolkit-grid">
+
+
+            <!-- =================================================
+             01 — DEVELOPMENT & CODE
+        ================================================== -->
+
+            <div class="tool-category">
+
+                <div class="category-header">
+
+                    <span class="category-number">01</span>
+
+                    <div>
+                        <h3>Development & Code</h3>
+
+                        <p>
+                            Code, version control & AI-assisted development
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="tool-items">
+
+
+                    <!-- GitHub -->
+
+                    <a href="https://github.com/AlkaRaikwar" target="_blank" rel="noopener noreferrer"
+                        class="tool-item">
+
+                        <div class="tool-logo github-logo">
+                            <i class="fab fa-github"></i>
+                        </div>
+
+                        <span>GitHub</span>
+
+                    </a>
+
+                    <a href="https://www.ibm.com/products/bob" target="_blank" rel="noopener noreferrer"
+                        class="tool-item">
+                        <div class="tool-logo ibm-bob-logo">
+                            <i class="fas fa-robot"></i>
+                        </div>
+
+                        <span>IBM Bob</span>
+                    </a>
+                    <!-- VS Code -->
+
+                    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer"
+                        class="tool-item">
+
+                        <div class="tool-logo vscode-logo">
+                            <i class="fas fa-code"></i>
+                        </div>
+
+                        <span>VS Code</span>
+
+                    </a>
+
+
+                    <!-- Cursor -->
+
+                    <a href="https://cursor.com/" target="_blank" rel="noopener noreferrer" class="tool-item">
+
+                        <div class="tool-logo cursor-logo">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+
+                        <span>Cursor</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+             02 — DEPLOYMENT
+        ================================================== -->
+
+            <div class="tool-category">
+
+                <div class="category-header">
+
+                    <span class="category-number">02</span>
+
+                    <div>
+                        <h3>Deployment Tools</h3>
+
+                        <p>
+                            Deploying and hosting applications
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="tool-items">
+
+
+                    <!-- Vercel -->
+
+                    <!-- <a href="https://vercel.com/alkaraikbar755-2980s-projects" target="_blank" rel="noopener noreferrer"
+                        class="tool-item"> -->
+
+                        <div class="tool-logo vercel-logo">
+                            ▲
+                        </div>
+
+                        <span>Vercel</span>
+
+                    </a>
+
+
+                    <!-- Netlify -->
+<!-- 
+                    <a href="https://app.netlify.com/teams/alkaraikbar755/projects" target="_blank"
+                        rel="noopener noreferrer" class="tool-item"> -->
+
+                        <div class="tool-logo netlify-logo">
+                            <span>◆</span>
+                        </div>
+
+                        <span>Netlify</span>
+
+                    </a>
+
+
+                    <!-- IBM Cloud   -->
+<!--  -->
+                    <!-- <a href="https://cloud.ibm.com/" target="_blank" rel="noopener noreferrer" class="tool-item">  -->
+
+                        <div class="tool-logo ibm-logo">
+                            <span>IBM</span>
+                        </div>
+
+                        <span>IBM Cloud</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+             03 — AI / ML MODEL TRAINING
+        ================================================== -->
+
+            <div class="tool-category">
+
+                <div class="category-header">
+
+                    <span class="category-number">03</span>
+
+                    <div>
+                        <h3>AI / ML Model Training</h3>
+
+                        <p>
+                            Experimentation, notebooks & model training
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="tool-items">
+
+
+                    <!-- Kaggle -->
+
+                    <a href="https://www.kaggle.com/alkaraikbar" target="_blank" rel="noopener noreferrer"
+                        class="tool-item">
+
+                        <div class="tool-logo kaggle-logo">
+                            <span>K</span>
+                        </div>
+
+                        <span>Kaggle</span>
+
+                    </a>
+
+
+                    <!-- Google Colab -->
+
+                    <a href="https://colab.research.google.com/" target="_blank" rel="noopener noreferrer"
+                        class="tool-item">
+
+                        <div class="tool-logo colab-logo">
+                            <span>▰</span>
+                        </div>
+
+                        <span>Google Colab</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+             04 — AI WORKFLOW & AGENTS
+        ================================================== -->
+
+            <div class="tool-category">
+
+                <div class="category-header">
+
+                    <span class="category-number">04</span>
+
+                    <div>
+                        <h3>AI Workflow & Agents</h3>
+
+                        <p>
+                            Automation, orchestration & AI workflows
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="tool-items">
+
+
+                    <!-- n8n -->
+
+                    <a href="https://n8n.io/" target="_blank" rel="noopener noreferrer" class="tool-item">
+
+                        <div class="tool-logo n8n-logo">
+                            <span>n8n</span>
+                        </div>
+
+                        <span>n8n</span>
+
+                    </a>
+
+
+                    <!-- Langflow -->
+
+                    <a href="https://www.langflow.org/" target="_blank" rel="noopener noreferrer" class="tool-item">
+
+                        <div class="tool-logo langflow-logo">
+                            <span>LF</span>
+                        </div>
+
+                        <span>Langflow</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <div class="toolkit-footer">
+
+            <i></i>
+
+            <span>
+                BUILD • TRAIN • DEPLOY • AUTOMATE
+            </span>
+
+            <i></i>
+
+        </div>
+
+    </section>
 
 
 
 
 
 
-
-
-
-
-    <!--  PROJECTS   SECTION  STARTS   FROM HERE   -->
+    <!--  PROJECTS      -->
 
     <section id="projects" class="px-6 md:px-10 py-16 max-w-7xl mx-auto">
         <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            
 
 
 
 
 
-            <div class="bg-[#1e2330] p-6 rounded-lg shadow-md border border-gray-800 hover:border-purple-500 transition relative flex flex-col justify-between">
+
+            <div
+                class="bg-[#1e2330] p-6 rounded-lg shadow-md border border-gray-800 hover:border-purple-500 transition relative flex flex-col justify-between">
                 <div>
                     <div class="flex justify-between items-center mb-3">
                         <div class="flex items-center space-x-2 text-xl font-bold text-purple-300">
                             <i class="fas fa-chart-bar"></i>
                             <span>DSORT: Visual Sorting Platform</span>
                         </div>
-                        <a href="https://alkaraikwar.github.io/DSORT/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-green-400 border border-green-500/30 bg-green-500/10 px-2 py-0.5 rounded flex items-center gap-1 hover:bg-green-500 hover:text-white transition">
+                        <a href="https://alkaraikwar.github.io/DSORT/" target="_blank" rel="noopener noreferrer"
+                            class="text-xs font-semibold text-green-400 border border-green-500/30 bg-green-500/10 px-2 py-0.5 rounded flex items-center gap-1 hover:bg-green-500 hover:text-white transition">
                             <i class="fas fa-external-link-alt text-[10px]"></i> Live
                         </a>
                     </div>
-                    
+
                     <p class="text-gray-400 text-sm mb-4">
-                        Developed an interactive algorithmic platform to visualize core sorting mechanics. Built with highly optimized DOM manipulations to render real-time array state-segregations and lower UI latency during heavy computational steps.
+                        Developed an interactive algorithmic platform to visualize core sorting mechanics. Built with
+                        highly optimized DOM manipulations to render real-time array state-segregations and lower UI
+                        latency during heavy computational steps.
                     </p>
 
                     <div class="ai-tools-head mb-4">
-                        <span class="ai-tools-title">AI-Assisted Development Tools:</span> 
-                        Utilized Cursor AI to write optimized performance benchmarks for time complexities and v0.dev for accelerated layout prototyping.
+                        <span class="ai-tools-title">AI-Assisted Development Tools:</span>
+                        Utilized Cursor AI to write optimized performance benchmarks for time complexities and v0.dev
+                        for accelerated layout prototyping.
                     </div>
                 </div>
 
@@ -401,21 +4690,24 @@
                     <span>2026</span>
                 </div>
             </div>
-            
 
 
-            <div class="bg-[#1e2330] p-6 rounded-lg shadow-md border border-gray-800 hover:border-purple-500 transition relative">
+
+            <div
+                class="bg-[#1e2330] p-6 rounded-lg shadow-md border border-gray-800 hover:border-purple-500 transition relative">
                 <div class="flex justify-between items-center mb-3">
                     <div class="flex items-center space-x-2 text-xl font-bold text-purple-300">
                         <i class="fas fa-book"></i>
                         <span>MediTrust High-Performance Portal</span>
                     </div>
-                    <a href="https://lustrous-fudge-cc41eb.netlify.app" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-green-400 border border-green-500/30 bg-green-500/10 px-2 py-0.5 rounded flex items-center gap-1 hover:bg-green-500 hover:text-white transition">
+                    <a href="https://lustrous-fudge-cc41eb.netlify.app" target="_blank" rel="noopener noreferrer"
+                        class="text-xs font-semibold text-green-400 border border-green-500/30 bg-green-500/10 px-2 py-0.5 rounded flex items-center gap-1 hover:bg-green-500 hover:text-white transition">
                         <i class="fas fa-external-link-alt text-[10px]"></i> Live
                     </a>
                 </div>
                 <p class="text-gray-400 text-sm mb-4">
-                    Built a responsive, high-performance healthcare portal focusing on frontend rendering structures, asset optimization, and robust cross-browser compatibility layers.
+                    Built a responsive, high-performance healthcare portal focusing on frontend rendering structures,
+                    asset optimization, and robust cross-browser compatibility layers.
                 </p>
                 <div class="flex justify-between items-center text-xs text-gray-500">
                     <div class="flex space-x-4">
@@ -425,13 +4717,15 @@
                 </div>
             </div>
 
-            <div class="bg-[#1e2330] p-6 rounded-lg shadow-md border border-gray-800 hover:border-purple-500 transition">
+            <div
+                class="bg-[#1e2330] p-6 rounded-lg shadow-md border border-gray-800 hover:border-purple-500 transition">
                 <div class="flex items-center space-x-2 text-xl font-bold mb-3 text-purple-300">
                     <i class="fas fa-book"></i>
                     <span>LinkedIn AI Automation Pipeline</span>
                 </div>
                 <p class="text-gray-400 text-sm mb-4">
-                    Built an automation pipeline for large-scale LinkedIn content analysis. Implemented rate-limiting and queue-based processing mechanisms while optimizing inference workflows for Llama3.
+                    Built an automation pipeline for large-scale LinkedIn content analysis. Implemented rate-limiting
+                    and queue-based processing mechanisms while optimizing inference workflows for Llama3.
                 </p>
                 <div class="flex justify-between items-center text-xs text-gray-500">
                     <div class="flex space-x-4">
@@ -441,13 +4735,15 @@
                 </div>
             </div>
 
-            <div class="bg-[#1e2330] p-6 rounded-lg shadow-md border border-gray-800 hover:border-purple-500 transition">
+            <div
+                class="bg-[#1e2330] p-6 rounded-lg shadow-md border border-gray-800 hover:border-purple-500 transition">
                 <div class="flex items-center space-x-2 text-xl font-bold mb-3 text-purple-300">
                     <i class="fas fa-book"></i>
                     <span>DSA Algorithmic State Segregator</span>
                 </div>
                 <p class="text-gray-400 text-sm mb-4">
-                    Platform designed to track and categorize algorithmic problem-solving states. Built with optimized SQLite schemas and lightweight REST APIs to lower latency through precise indexing.
+                    Platform designed to track and categorize algorithmic problem-solving states. Built with optimized
+                    SQLite schemas and lightweight REST APIs to lower latency through precise indexing.
                 </p>
                 <div class="flex justify-between items-center text-xs text-gray-500">
                     <div class="flex space-x-4">
@@ -458,70 +4754,234 @@
             </div>
         </div>
     </section>
-<section id="certifications" class="px-4 md:px-8 py-16 bg-[#151922]">
-    <div class="max-w-7xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-2">Achievements & Certifications 🏆</h2>
-        <p class="text-gray-400 text-center text-sm mb-12">CREDENTIALS AND VALUABLE SKILLS GAINED ALONG THE WAY</p>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            
-            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 text-center flex flex-col justify-between items-center transition hover:border-gray-700">
-                <div class="w-16 h-16 bg-orange-600/10 rounded-full flex items-center justify-center text-3xl text-orange-500 mb-4">
-                    <i class="fas fa-cloud"></i>
+
+
+
+
+
+
+
+
+
+
+    <!-- Acchivement and  certification  -->
+
+    <section id="certifications" class="px-4 md:px-8 py-16 bg-[#151922]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-2">Achievements & Certifications 🏆</h2>
+            <p class="text-gray-400 text-center text-sm mb-12">CREDENTIALS AND VALUABLE SKILLS GAINED ALONG THE WAY</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                <div
+                    class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 text-center flex flex-col justify-between items-center transition hover:border-gray-700">
+                    <div
+                        class="w-16 h-16 bg-orange-600/10 rounded-full flex items-center justify-center text-3xl text-orange-500 mb-4">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-2">Certified Data Analyst</h3>
+                    <p class="text-gray-400 text-[11px] leading-relaxed mb-4">Validated expert tracking for scalable and
+                        data-driven infrastructure under AWS frameworks.</p>
+                    <span
+                        class="bg-purple-900/50 text-purple-300 border border-purple-700 text-xs px-3 py-1 rounded-full mt-auto">AWS</span>
                 </div>
-                <h3 class="font-bold text-base mb-2">Certified Data Analyst</h3>
-                <p class="text-gray-400 text-[11px] leading-relaxed mb-4">Validated expert tracking for scalable and data-driven infrastructure under AWS frameworks.</p>
-                <span class="bg-purple-900/50 text-purple-300 border border-purple-700 text-xs px-3 py-1 rounded-full mt-auto">AWS</span>
+
+                <div
+                    class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 text-center flex flex-col justify-between items-center transition hover:border-gray-700">
+                    <div
+                        class="w-16 h-16 bg-blue-600/10 rounded-full flex items-center justify-center text-3xl text-blue-400 mb-4">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-2">Python Systems</h3>
+                    <p class="text-gray-400 text-[11px] leading-relaxed mb-4">Professional specialization focused on
+                        programmatic infrastructure engineering pipelines.</p>
+                    <span
+                        class="bg-purple-900/50 text-purple-300 border border-purple-700 text-xs px-3 py-1 rounded-full mt-auto">IBM</span>
+                </div>
+
+                <div
+                    class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 text-center flex flex-col justify-between items-center transition hover:border-gray-700">
+                    <div
+                        class="w-16 h-16 bg-yellow-600/10 rounded-full flex items-center justify-center text-3xl text-yellow-500 mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-2">HTML, CSS Certified</h3>
+                    <p class="text-gray-400 text-[11px] leading-relaxed mb-4">Mastery in constructing robust layouts,
+                        semantic code, and cross-browser interfaces.</p> <span
+                        class="bg-purple-900/50 text-purple-300 border border-purple-700 text-xs px-3 py-1 rounded-full mt-auto">Pearson</span>
+                </div>
+
+                <div
+                    class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 text-center flex flex-col justify-between items-center transition hover:border-gray-700">
+                    <div
+                        class="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center text-3xl text-blue-500 mb-4">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-2">Computer Networks</h3>
+                    <p class="text-gray-400 text-[11px] leading-relaxed mb-4">Advanced certification acknowledging
+                        critical core networking layout metrics.</p>
+                    <span
+                        class="bg-purple-900/50 text-purple-300 border border-purple-700 text-xs px-3 py-1 rounded-full mt-auto">NPTEL
+                        / IITKgp</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- =========================
+     EDUCATION
+========================= -->
+
+    <section id="education" class="education-section">
+
+        <div class="education-header">
+            <span class="edu-kicker">ACADEMIC JOURNEY</span>
+            <h2>Education</h2>
+            <p>Learning, building and growing through every stage.</p>
+        </div>
+
+
+        <div class="education-grid">
+
+            <!-- ================= 12TH ================= -->
+
+            <div class="edu-card">
+
+                <div class="edu-top">
+                    <span>01</span>
+                    <span>ACADEMICS</span>
+                </div>
+
+                <div class="triangle-ui">
+
+                    <div class="triangle-top">
+                        <i class="fas fa-school"></i>
+                        <span>CLASS XII</span>
+                    </div>
+
+                    <div class="triangle-left">
+                        <span>SCIENCE</span>
+                        <small>Maths</small>
+                    </div>
+
+                    <div class="triangle-right">
+                        <span>BSEB</span>
+                        <small>2024</small>
+                    </div>
+
+                    <div class="triangle-center">
+                        <strong>81%</strong>
+                        <span>AGGREGATE</span>
+                    </div>
+
+                </div>
+
+                <div class="edu-info">
+                    <h3>Class XII</h3>
+                    <p>Bihar School Examination Board</p>
+                </div>
+
             </div>
 
-            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 text-center flex flex-col justify-between items-center transition hover:border-gray-700">
-                <div class="w-16 h-16 bg-blue-600/10 rounded-full flex items-center justify-center text-3xl text-blue-400 mb-4">
-                    <i class="fab fa-python"></i>
+
+            <!-- ================= JEE ================= -->
+
+            <div class="edu-card">
+
+                <div class="edu-top">
+                    <span>02</span>
+                    <span>ENTRANCE</span>
                 </div>
-                <h3 class="font-bold text-base mb-2">Python Systems</h3>
-                <p class="text-gray-400 text-[11px] leading-relaxed mb-4">Professional specialization focused on programmatic infrastructure engineering pipelines.</p>
-                <span class="bg-purple-900/50 text-purple-300 border border-purple-700 text-xs px-3 py-1 rounded-full mt-auto">IBM</span>
+
+                <div class="triangle-ui">
+
+                    <div class="triangle-top">
+                        <i class="fas fa-bolt"></i>
+                        <span>JEE MAINS</span>
+                    </div>
+
+                    <div class="triangle-left">
+                        <span>ENGINEERING</span>
+                        <small>Entrance</small>
+                    </div>
+
+                    <div class="triangle-right">
+                        <span>2024</span>
+                        <small>Exam</small>
+                    </div>
+
+                    <div class="triangle-center">
+                        <strong>87%</strong>
+                        <span>PERCENTILE</span>
+                    </div>
+
+                </div>
+
+                <div class="edu-info">
+                    <h3>JEE Mains</h3>
+                    <p>Joint Entrance Examination</p>
+                </div>
+
             </div>
 
-            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 text-center flex flex-col justify-between items-center transition hover:border-gray-700">
-                <div class="w-16 h-16 bg-yellow-600/10 rounded-full flex items-center justify-center text-3xl text-yellow-500 mb-4">
-                    <i class="fas fa-code"></i> </div>
-                <h3 class="font-bold text-base mb-2">HTML, CSS Certified</h3>
-                <p class="text-gray-400 text-[11px] leading-relaxed mb-4">Mastery in constructing robust layouts, semantic code, and cross-browser interfaces.</p> <span class="bg-purple-900/50 text-purple-300 border border-purple-700 text-xs px-3 py-1 rounded-full mt-auto">Pearson</span> </div>
 
-            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 text-center flex flex-col justify-between items-center transition hover:border-gray-700">
-                <div class="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center text-3xl text-blue-500 mb-4">
-                    <i class="fas fa-network-wired"></i>
+            <!-- ================= UG ================= -->
+
+            <div class="edu-card active-edu">
+
+                <div class="edu-top">
+                    <span>03</span>
+                    <span>UNDERGRADUATE</span>
                 </div>
-                <h3 class="font-bold text-base mb-2">Computer Networks</h3>
-                <p class="text-gray-400 text-[11px] leading-relaxed mb-4">Advanced certification acknowledging critical core networking layout metrics.</p>
-                <span class="bg-purple-900/50 text-purple-300 border border-purple-700 text-xs px-3 py-1 rounded-full mt-auto">NPTEL / IITKgp</span>
+
+                <div class="triangle-ui">
+
+                    <div class="triangle-top">
+                        <i class="fas fa-university"></i>
+                        <span>UG • B.TECH</span>
+                    </div>
+
+                    <div class="triangle-left">
+                        <span>AI & ML</span>
+                        <small>Specialization</small>
+                    </div>
+
+                    <div class="triangle-right">
+                        <span>2024</span>
+                        <small>→ 2028</small>
+                    </div>
+
+                    <div class="triangle-center ug-center">
+                        <strong>PARUL</strong>
+                        <span>UNIVERSITY</span>
+                    </div>
+
+                </div>
+
+                <div class="edu-info">
+                    <h3>B.Tech CSE</h3>
+                    <p>Parul Institute of Technology</p>
+                </div>
+
             </div>
 
         </div>
-    </div>
-</section>
 
-    <section id="education" class="px-6 md:px-10 py-16 max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-12">Education</h2>
-        
-        <div class="space-y-12">
-            <div class="relative pb-6 border-b border-gray-800">
-                <div class="text-5xl text-purple-500 mb-3"><i class="fas fa-university"></i></div>
-                <h3 class="text-2xl font-bold">Parul Institute of Technology</h3>
-                <p class="text-purple-400 font-medium">B.Tech in Computer Science Engineering (AI & ML)</p>
-                <p class="text-gray-500 text-sm">Sep 2024 - Sep 2028</p>
-                <p class="text-gray-400 mt-2 text-sm">Secured First Division Pipeline State Tracking — <span class="text-purple-300 font-semibold">7.03 CGPA</span></p>
-            </div>
 
-            <div>
-                <div class="text-5xl text-indigo-500 mb-3"><i class="fas fa-school"></i></div>
-                <h3 class="text-2xl font-bold">Bihar Board</h3>
-                <p class="text-indigo-400 font-medium">Class XII (Secondary Education: Science & Math's)</p>
-                <!-- <p class="text-gray-500 text-sm">Graduated: 2024</p> -->
-                <p class="text-gray-400 mt-2 text-sm">Academic Performance aggregate standing: <span class="text-indigo-300 font-semibold">80.03%</span></p>
-            </div>
+        <div class="education-footer">
+            <span>LEARN</span>
+            <i></i>
+            <span>BUILD</span>
+            <i></i>
+            <span>EVOLVE</span>
         </div>
+
     </section>
 
     <section id="contact" class="px-6 md:px-10 py-16 max-w-7xl mx-auto border-t border-gray-800">
@@ -531,27 +4991,40 @@
                 <p class="text-gray-400 text-lg">DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</p>
                 <p class="text-purple-400 font-semibold text-xl">"AI & ML Undergraduate / Backend Developer"</p>
                 <p class="text-gray-500"><i class="fas fa-map-marker-alt mr-2"></i> India</p>
-                <p class="text-green-400 font-medium"><span class="inline-block w-2.5 h-2.5 bg-green-400 rounded-full mr-2"></span>Open for opportunities: Yes</p>
-                
+                <p class="text-green-400 font-medium"><span
+                        class="inline-block w-2.5 h-2.5 bg-green-400 rounded-full mr-2"></span>Open for opportunities:
+                    Yes</p>
+
                 <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="https://github.com/alkaraikwar" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="GitHub">
+                    <a href="https://github.com/alkaraikwar" target="_blank" rel="noopener noreferrer"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block"
+                        title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/alka-raikwar-971b91307/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/alka-raikwar-971b91307/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block"
+                        title="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://leetcode.com/u/Alka_Raikwar3/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-yellow-600 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="LeetCode">
+                    <a href="https://leetcode.com/u/Alka_Raikwar3/" target="_blank" rel="noopener noreferrer"
+                        class="w-10 h-10 rounded-full bg-yellow-600 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block"
+                        title="LeetCode">
                         <i class="fas fa-code"></i>
                     </a>
-                    <a href="https://codeforces.com/profile/alkaraikbar" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-lg hover:bg-purple-600 transition text-white block" title="Codeforces">
+                    <a href="https://codeforces.com/profile/alkaraikbar" target="_blank" rel="noopener noreferrer"
+                        class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-lg hover:bg-purple-600 transition text-white block"
+                        title="Codeforces">
                         <i class="si si-codeforces"></i>
                     </a>
-                    <a href="mailto:alkaraikbar755@gmail.com" class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="Email">
+                    <a href="mailto:alkaraikbar755@gmail.com"
+                        class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block"
+                        title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
-            
+
             <div class="w-full md:w-1/3 flex justify-center">
                 <div class="w-64 h-64 rounded-full border-4 border-purple-500 overflow-hidden shadow-xl">
                     <img src="portfolio_img.jpg" alt="Alka Raikwar" class="w-full h-full object-cover object-top">
@@ -565,5 +5038,58 @@
         <span class="text-xs text-gray-700">Theme inspired by developerFolio</span>
     </footer>
 
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        /* =========================================
+   SKILLS INTERACTION
+========================================= */
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const skillCards = document.querySelectorAll(".skill-card");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+
+                    entries.forEach((entry) => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("skill-visible");
+
+                            observer.unobserve(entry.target);
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+
+            skillCards.forEach((card, index) => {
+
+                card.style.transitionDelay = `${index * 70}ms`;
+
+                observer.observe(card);
+
+            });
+
+        });
+    </script>
 </body>
+
+
 </html>

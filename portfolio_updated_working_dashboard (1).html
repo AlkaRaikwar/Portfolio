@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alka Raikwar | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v13/font/simple-icons.min.css">
+    <style>
+        body {
+            background-color: #1a1e29;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .progress-bar-bg {
+            background-color: #ffffff1a;
+        }
+
+        .port_image{
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            border: 2px solid navy;
+             background-image: url("portfolio_img.jpg");
+            background-size: cover    ;
+            background-position: center top;
+           
+           
+        }
+        .ai-tools-head {
+    font-size: 15px;
+    color: #cbd5e1; /* Smooth Light Gray Text */
+    line-height: 1.6; /* Balanced line spacing */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 12px;
+}
+
+.ai-tools-title {
+    color: #c084fc; /* Perfect Purple Theme Match (#purple-400) */
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-right: 4px;
+}
+
+
+
+
+/* ================= Development Toolkit ================= */
+
+.tool-card{
+    width:125px;
+    height:125px;
+
+    background:#1e2330;
+    border:1px solid #374151;
+    border-radius:18px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    color:white;
+
+    transition:all .3s ease;
+}
+
+.tool-card:hover{
+    transform:translateY(-8px);
+    border-color:#a855f7;
+    box-shadow:0 12px 30px rgba(168,85,247,.35);
+}
+
+.tool-card i{
+    font-size:40px;
+    margin-bottom:12px;
+}
+
+.tool-card span{
+    font-size:14px;
+    font-weight:600;
+    text-align:center;
+    color:#fff;
+}
+
+@media(max-width:768px){
+
+    .tool-card{
+        width:100px;
+        height:100px;
+    }
+
+    .tool-card i{
+        font-size:32px;
+    }
+
+    .tool-card span{
+        font-size:12px;
+    }
+
+}
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
+    .ai-tools-head {
+        font-size: 14px;
+    }
+}
+       
+
+
+/* =========================================================
+   WHAT I'M WORKING ON — PREMIUM PROGRESS DASHBOARD
+   ========================================================= */
+.working-dashboard {
+    position: relative;
+    margin: 20px auto 0;
+    padding: 34px;
+    max-width: 1400px;
+    border: 1px solid rgba(99,102,241,.28);
+    border-radius: 28px;
+    background:
+        radial-gradient(circle at 8% 12%, rgba(34,211,238,.08), transparent 26%),
+        radial-gradient(circle at 92% 18%, rgba(168,85,247,.10), transparent 28%),
+        linear-gradient(135deg, #0d1422 0%, #111827 48%, #0b1220 100%);
+    box-shadow: 0 30px 80px rgba(0,0,0,.32), inset 0 1px rgba(255,255,255,.04);
+    overflow: hidden;
+}
+
+.working-dashboard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: .22;
+    background-image:
+        linear-gradient(rgba(99,102,241,.10) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(99,102,241,.10) 1px, transparent 1px);
+    background-size: 34px 34px;
+    mask-image: linear-gradient(to bottom, black, transparent 88%);
+}
+
+.working-head {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.working-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(34,211,238,.25);
+    border-radius: 999px;
+    background: rgba(34,211,238,.06);
+    color: #67e8f9;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.working-kicker::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 12px #22c55e;
+    animation: livePulse 1.8s infinite;
+}
+
+.working-title {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 900;
+    letter-spacing: -.04em;
+    color: #f8fafc;
+    margin: 0;
+}
+
+.working-title .accent { color: #a78bfa; }
+
+.working-subtitle {
+    color: #94a3b8;
+    margin: 8px auto 0;
+    max-width: 700px;
+    font-size: 14px;
+}
+
+.working-group {
+    position: relative;
+    z-index: 1;
+    margin-top: 18px;
+    padding: 18px;
+    border: 1px solid rgba(148,163,184,.12);
+    border-radius: 20px;
+    background: rgba(15,23,42,.68);
+    backdrop-filter: blur(12px);
+}
+
+.working-group-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.working-group-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #e2e8f0;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.working-index {
+    color: #a78bfa;
+    font-family: monospace;
+    font-weight: 900;
+}
+
+.working-note {
+    color: #64748b;
+    font-size: 11px;
+}
+
+.platform-grid,
+.dsa-grid,
+.project-grid {
+    display: grid;
+    gap: 14px;
+}
+
+.platform-grid { grid-template-columns: repeat(5, minmax(0,1fr)); }
+.dsa-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
+.project-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+
+.work-card {
+    position: relative;
+    min-height: 180px;
+    padding: 18px;
+    border: 1px solid rgba(148,163,184,.13);
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(30,41,59,.92), rgba(15,23,42,.92));
+    overflow: hidden;
+    transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease;
+}
+
+.work-card::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -48px;
+    top: -48px;
+    border-radius: 50%;
+    background: rgba(139,92,246,.12);
+    filter: blur(8px);
+    transition: transform .35s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(129,140,248,.55);
+    box-shadow: 0 18px 38px rgba(0,0,0,.28), 0 0 24px rgba(99,102,241,.08);
+}
+
+.work-card:hover::after { transform: scale(1.8); }
+
+.platform-card { min-height: 205px; text-align: center; }
+
+.platform-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 12px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    font-size: 25px;
+    color: white;
+    background: #172033;
+    border: 1px solid rgba(255,255,255,.10);
+    box-shadow: inset 0 0 20px rgba(255,255,255,.03);
+}
+
+.platform-card h4,
+.project-card h4 {
+    color: #f8fafc;
+    font-size: 15px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.platform-reason {
+    color: #94a3b8;
+    font-size: 11px;
+    line-height: 1.55;
+    min-height: 35px;
+    margin: 7px 0 12px;
+}
+
+.work-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(139,92,246,.45);
+    background: linear-gradient(135deg,#7c3aed,#9333ea);
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 800;
+    transition: .25s ease;
+}
+
+.work-btn:hover { transform: translateY(-2px); filter: brightness(1.12); }
+
+.dsa-card { min-height: 155px; }
+
+.dsa-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.dsa-logo {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #111827;
+    border: 1px solid rgba(255,255,255,.08);
+    font-size: 21px;
+}
+
+.dsa-name { font-weight: 800; color: #e2e8f0; }
+.dsa-handle { color: #64748b; font-size: 10px; margin-top: 2px; }
+
+.status-row {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin-bottom: 13px;
+}
+
+.status-pill {
+    border: 0;
+    border-radius: 999px;
+    padding: 5px 9px;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.status-done { color:#fed7aa; background:rgba(249,115,22,.18); border:1px solid rgba(249,115,22,.30); }
+.status-going { color:#bbf7d0; background:rgba(34,197,94,.15); border:1px solid rgba(34,197,94,.30); }
+
+.dsa-link {
+    color: #60a5fa;
+    font-size: 11px;
+    text-decoration: none;
+}
+.dsa-link:hover { text-decoration: underline; }
+
+.mern-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0,1fr));
+    gap: 10px;
+}
+
+.stack-step {
+    min-height: 125px;
+    padding: 14px 10px;
+    border-radius: 14px;
+    border: 1px solid rgba(148,163,184,.12);
+    background: rgba(30,41,59,.62);
+    text-align: center;
+    position: relative;
+}
+
+.stack-icon { font-size: 28px; margin-bottom: 7px; }
+.stack-name { color:#e2e8f0; font-weight:800; font-size:12px; }
+.stack-state { margin-top:5px; font-size:9px; font-weight:900; text-transform:uppercase; letter-spacing:.5px; }
+.state-done { color:#4ade80; }
+.state-going { color:#fb923c; }
+.state-next { color:#64748b; }
+
+.stack-bar {
+    height: 5px;
+    margin-top: 11px;
+    border-radius: 999px;
+    background: #273244;
+    overflow: hidden;
+}
+
+.stack-fill {
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg,#7c3aed,#c084fc);
+    box-shadow: 0 0 12px rgba(168,85,247,.45);
+}
+
+.stack-percent { color:#94a3b8; font-size:9px; margin-top:4px; }
+
+.project-card { min-height: 300px; display:flex; flex-direction:column; justify-content:space-between; }
+
+.project-tag {
+    display:inline-flex;
+    width:max-content;
+    padding:4px 8px;
+    border-radius:999px;
+    background:rgba(139,92,246,.12);
+    border:1px solid rgba(139,92,246,.25);
+    color:#c4b5fd;
+    font-size:9px;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:.7px;
+    margin-bottom:10px;
+}
+
+.project-desc { color:#94a3b8; font-size:11px; line-height:1.65; margin:8px 0 13px; }
+
+.stack-label { color:#64748b; font-size:10px; text-transform:uppercase; font-weight:900; letter-spacing:1px; }
+.tech-pills { display:flex; flex-wrap:wrap; gap:6px; margin-top:7px; }
+.tech-pill { padding:4px 7px; border-radius:6px; color:#c4b5fd; background:rgba(124,58,237,.13); border:1px solid rgba(124,58,237,.20); font-size:9px; font-weight:800; }
+
+.level-row { display:flex; align-items:center; justify-content:space-between; margin-top:14px; color:#94a3b8; font-size:10px; }
+.level-bar { height:5px; flex:1; margin-left:10px; border-radius:999px; background:#273244; overflow:hidden; }
+.level-fill { height:100%; border-radius:inherit; background:linear-gradient(90deg,#22d3ee,#8b5cf6); }
+
+.project-actions { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-top:16px; }
+.repo-link { color:#60a5fa; font-size:10px; font-weight:800; text-decoration:none; }
+.repo-link:hover { text-decoration:underline; }
+
+@keyframes livePulse {
+    0%,100% { transform:scale(1); opacity:1; }
+    50% { transform:scale(1.35); opacity:.55; }
+}
+
+@media(max-width:1100px){
+    .platform-grid { grid-template-columns:repeat(3,1fr); }
+    .dsa-grid { grid-template-columns:repeat(2,1fr); }
+    .project-grid { grid-template-columns:1fr; }
+    .mern-grid { grid-template-columns:repeat(4,1fr); }
+}
+
+@media(max-width:768px){
+    .working-dashboard { padding:20px 14px; border-radius:20px; }
+    .working-group { padding:13px; }
+    .platform-grid,.dsa-grid { grid-template-columns:1fr; }
+    .mern-grid { grid-template-columns:repeat(2,1fr); }
+    .working-group-head { align-items:flex-start; flex-direction:column; }
+}
+
+@media(max-width:420px){
+    .mern-grid { grid-template-columns:1fr; }
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="flex justify-between items-center px-6 md:px-10 py-6 max-w-7xl mx-auto">
+        <div class="text-xl font-bold tracking-wider text-purple-400"> Alka Raikwar </div>
+        <div class="hidden md:flex space-x-8 text-gray-300 font-medium">
+            <a href="#skills" class="hover:text-purple-400 transition">Skills</a>
+            <a href="#projects" class="hover:text-purple-400 transition">Projects</a>
+            <a href="#certifications" class="hover:text-purple-400 transition">Certifications</a>
+            <a href="#education" class="hover:text-purple-400 transition">Education</a>
+            <a href="#contact" class="hover:text-purple-400 transition">Contact Me</a>
+        </div>
+    </nav>
+
+    <section class="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-10 py-12 max-w-7xl mx-auto min-h-[70vh]">
+        <div class="w-full md:w-1/2 space-y-6 mt-10 md:mt-0">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
+                Hi all, Am Alka <span class="inline-block animate-bounce">👋</span>
+            </h1>
+            <p class="text-gray-400 text-lg leading-relaxed max-w-xl">
+                An AI & ML undergraduate skilled in Backend Development, Full-Stack Engineering, and Data Structures & Algorithms. Experienced in building scalable web applications, REST APIs, and AI-powered automation workflows.
+            </p>
+            
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="https://github.com/alkaraikwar" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/alka-raikwar-971b91307/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://leetcode.com/u/Alka_Raikwar3/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-yellow-600 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="LeetCode">
+                    <i class="fas fa-code"></i>
+                </a>
+                <a href="https://codeforces.com/profile/alkaraikbar" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-lg hover:bg-purple-600 transition text-white block" title="Codeforces">
+                    <i class="si si-codeforces"></i>
+                </a>
+                <a href="mailto:alkaraikbar755@gmail.com" class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <div class="flex space-x-4 pt-4">
+                <a href="mailto:alkaraikbar755@gmail.com" class="bg-purple-700 hover:bg-purple-600 text-white font-semibold px-6 py-3 rounded transition shadow-lg">CONTACT ME</a>
+                <a href="https://lustrous-fudge-cc41eb.netlify.app" target="_blank" rel="noopener noreferrer" class="bg-purple-900 hover:bg-purple-800 text-purple-200 font-semibold px-6 py-3 rounded transition border border-purple-700">VIEW LIVE PROJECT</a>
+            </div>
+        </div>
+
+       
+            <div class="port_image">
+                 <div class="image"></div>
+            </div>
+            <!-- <div class="w-72 h-72 md:w-96 md:h-96 rounded-2xl border-4 border-purple-500 overflow-hidden shadow-2xl shadow-purple-500/20 transform hover:scale-105 transition duration-300"   style="border-radius: 50%; ";> -->
+                <!-- <img src="portfolio_img.jpg" alt="Alka Raikwar" class="w-full h-full object-cover object-top"> -->
+
+            
+    
+    </section>
+
+    <section id="skills" class="px-6 md:px-10 py-16 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-2">What I Do</h2>
+        <p class="text-purple-400 text-center uppercase tracking-widest font-semibold text-sm mb-12">AI & ML Engineer / Backend Developer</p>
+
+        <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="w-full md:w-1/2 flex justify-center">
+                <svg class="w-3/4 h-auto text-indigo-500" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="40" y="50" width="120" height="80" rx="5" fill="#312e81"/>
+                    <rect x="30" y="130" width="140" height="10" rx="2" fill="#4338ca"/>
+                    <circle cx="100" cy="90" r="20" fill="#6366f1"/>
+                </svg>
+            </div>
+
+            <div class="w-full md:w-1/2 space-y-6">
+                <div class="grid grid-cols-5 gap-6 text-center text-4xl text-gray-400">
+                    <div class="hover:text-blue-400 transition"><i class="fab fa-python"></i><p class="text-xs mt-1">Python</p></div>
+                    <div class="hover:text-orange-500 transition"><i class="fab fa-java"></i><p class="text-xs mt-1">Java</p></div>
+                    <div class="hover:text-yellow-500 transition"><i class="fab fa-js"></i><p class="text-xs mt-1">JavaScript</p></div>
+                    <div class="hover:text-green-500 transition"><i class="fas fa-brain"></i><p class="text-xs mt-1">LLMs</p></div>
+                    <div class="hover:text-blue-500 transition"><i class="fab fa-react"></i><p class="text-xs mt-1">React</p></div>
+                </div>
+
+                <div class="space-y-3 pt-4 text-gray-300">
+                    <p class="flex items-start"><span class="text-purple-500 mr-2" style="height: 30px;width:30px;background-image: url(lo.png); border-radius: 50%;"></span> Developing clean backend workflows and REST APIs using Django, Flask, and Node.js.</p>
+                    <p class="flex items-start"><span class="text-purple-500 mr-2" style="height: 30px;width:30px;background-image: url(lo.png); border-radius: 50%;"></span> Automating complex workflows and integrating large language models like Llama3.</p>
+                    <p class="flex items-start"><span class="text-purple-500 mr-2" style="height: 30px;width:30px;background-image: url(lo.png); border-radius: 50%;"></span> Solving architectural & computational problems with strong Data Structures foundations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- =========================================================
+     WHAT I'M WORKING ON — LIVE DEVELOPMENT DASHBOARD
+     ========================================================= -->
+<section id="working-on" class="px-4 md:px-6 py-12 max-w-7xl mx-auto">
+    <div class="working-dashboard">
+        <div class="working-head">
+            <div class="working-kicker">Live Development Dashboard</div>
+            <h2 class="working-title">What I'm <span class="accent">Working On</span></h2>
+            <p class="working-subtitle">Currently learning, building, practicing and contributing — all in one place.</p>
+        </div>
+
+        <!-- 0. SOCIAL / COMMUNITY -->
+        <div class="working-group">
+            <div class="working-group-head">
+                <div class="working-group-title"><span class="working-index">0&gt;</span> Where I'm Active</div>
+                <span class="working-note">Platforms where I learn, build, share & grow</span>
+            </div>
+            <div class="platform-grid">
+                <div class="work-card platform-card">
+                    <div class="platform-logo text-blue-400"><i class="fab fa-linkedin-in"></i></div>
+                    <h4>LinkedIn</h4>
+                    <p class="platform-reason">Professional journey, networking & career awareness.</p>
+                    <a class="work-btn" href="https://www.linkedin.com/in/alka-raikwar-971b91307/" target="_blank" rel="noopener noreferrer">Visit Profile ↗</a>
+                </div>
+                <div class="work-card platform-card">
+                    <div class="platform-logo text-pink-400"><i class="fab fa-instagram"></i></div>
+                    <h4>Instagram</h4>
+                    <p class="platform-reason">Self-promotion, creativity & personal visibility.</p>
+                    <a class="work-btn" href="#" title="Add your Instagram profile link">Visit Profile ↗</a>
+                </div>
+                <div class="work-card platform-card">
+                    <div class="platform-logo text-red-400"><i class="fab fa-youtube"></i></div>
+                    <h4>YouTube</h4>
+                    <p class="platform-reason">Building as a YouTuber and growing a community.</p>
+                    <a class="work-btn" href="#" title="Add your YouTube channel link">Visit Channel ↗</a>
+                </div>
+                <div class="work-card platform-card">
+                    <div class="platform-logo text-white"><i class="fab fa-github"></i></div>
+                    <h4>GitHub</h4>
+                    <p class="platform-reason">Open-source work, projects & public engineering.</p>
+                    <a class="work-btn" href="https://github.com/alkaraikwar" target="_blank" rel="noopener noreferrer">Visit Profile ↗</a>
+                </div>
+                <div class="work-card platform-card">
+                    <div class="platform-logo text-cyan-400"><i class="fas fa-code-branch"></i></div>
+                    <h4>GSSoC</h4>
+                    <p class="platform-reason">Contributing to open source and collaborative projects.</p>
+                    <a class="work-btn" href="#" title="Add your GSSoC contributor profile link">Contributor ↗</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1. DSA -->
+        <div class="working-group">
+            <div class="working-group-head">
+                <div class="working-group-title"><span class="working-index">1&gt;</span> DSA Practice</div>
+                <span class="working-note">Consistent practice. Stronger logic.</span>
+            </div>
+            <div class="dsa-grid">
+                <div class="work-card dsa-card">
+                    <div class="dsa-top"><div class="dsa-logo text-orange-400"><i class="si si-leetcode"></i></div><div><div class="dsa-name">LeetCode</div><div class="dsa-handle">Problem Solving</div></div></div>
+                    <div class="status-row"><span class="status-pill status-done">Track Done</span><span class="status-pill status-going">Track Ongoing</span></div>
+                    <a class="dsa-link" href="https://leetcode.com/u/Alka_Raikwar3/" target="_blank" rel="noopener noreferrer">Open profile ↗</a>
+                </div>
+                <div class="work-card dsa-card">
+                    <div class="dsa-top"><div class="dsa-logo text-green-400"><i class="si si-hackerrank"></i></div><div><div class="dsa-name">HackerRank</div><div class="dsa-handle">Practice & Certifications</div></div></div>
+                    <div class="status-row"><span class="status-pill status-done">Track Done</span><span class="status-pill status-going">Track Ongoing</span></div>
+                    <a class="dsa-link" href="#" title="Add your HackerRank profile link">Open profile ↗</a>
+                </div>
+                <div class="work-card dsa-card">
+                    <div class="dsa-top"><div class="dsa-logo text-green-500"><i class="fas fa-laptop-code"></i></div><div><div class="dsa-name">GeeksforGeeks</div><div class="dsa-handle">DSA & CS Fundamentals</div></div></div>
+                    <div class="status-row"><span class="status-pill status-done">Track Done</span><span class="status-pill status-going">Track Ongoing</span></div>
+                    <a class="dsa-link" href="#" title="Add your GFG profile link">Open profile ↗</a>
+                </div>
+                <div class="work-card dsa-card">
+                    <div class="dsa-top"><div class="dsa-logo text-red-400"><i class="si si-codeforces"></i></div><div><div class="dsa-name">Codeforces</div><div class="dsa-handle">Competitive Programming</div></div></div>
+                    <div class="status-row"><span class="status-pill status-done">Track Done</span><span class="status-pill status-going">Track Ongoing</span></div>
+                    <a class="dsa-link" href="https://codeforces.com/profile/alkaraikbar" target="_blank" rel="noopener noreferrer">Open profile ↗</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. MERN STACK -->
+        <div class="working-group">
+            <div class="working-group-head">
+                <div class="working-group-title"><span class="working-index">2&gt;</span> MERN Stack Journey</div>
+                <span class="working-note">Learning by building — one technology at a time.</span>
+            </div>
+            <div class="mern-grid">
+                <div class="stack-step"><div class="stack-icon text-orange-500"><i class="fab fa-html5"></i></div><div class="stack-name">HTML</div><div class="stack-state state-done">Completed</div><div class="stack-bar"><div class="stack-fill" style="width:100%"></div></div><div class="stack-percent">100%</div></div>
+                <div class="stack-step"><div class="stack-icon text-blue-400"><i class="fab fa-css3-alt"></i></div><div class="stack-name">CSS</div><div class="stack-state state-done">Completed</div><div class="stack-bar"><div class="stack-fill" style="width:100%"></div></div><div class="stack-percent">100%</div></div>
+                <div class="stack-step"><div class="stack-icon text-yellow-400"><i class="fab fa-js"></i></div><div class="stack-name">JavaScript</div><div class="stack-state state-going">Going On</div><div class="stack-bar"><div class="stack-fill" style="width:60%"></div></div><div class="stack-percent">60%</div></div>
+                <div class="stack-step"><div class="stack-icon text-cyan-400"><i class="fab fa-react"></i></div><div class="stack-name">React</div><div class="stack-state state-next">Next</div><div class="stack-bar"><div class="stack-fill" style="width:10%"></div></div><div class="stack-percent">10%</div></div>
+                <div class="stack-step"><div class="stack-icon text-green-400"><i class="fab fa-node-js"></i></div><div class="stack-name">Node.js</div><div class="stack-state state-next">Upcoming</div><div class="stack-bar"><div class="stack-fill" style="width:0%"></div></div><div class="stack-percent">0%</div></div>
+                <div class="stack-step"><div class="stack-icon text-gray-300"><i class="fas fa-server"></i></div><div class="stack-name">Express.js</div><div class="stack-state state-next">Upcoming</div><div class="stack-bar"><div class="stack-fill" style="width:0%"></div></div><div class="stack-percent">0%</div></div>
+                <div class="stack-step"><div class="stack-icon text-green-500"><i class="fas fa-leaf"></i></div><div class="stack-name">MongoDB</div><div class="stack-state state-next">Upcoming</div><div class="stack-bar"><div class="stack-fill" style="width:0%"></div></div><div class="stack-percent">0%</div></div>
+            </div>
+        </div>
+
+        <!-- 3. CURRENT PROJECTS -->
+        <div class="working-group">
+            <div class="working-group-head">
+                <div class="working-group-title"><span class="working-index">3&gt;</span> Current Projects</div>
+                <span class="working-note">Real projects. Real learning. Public progress.</span>
+            </div>
+            <div class="project-grid">
+                <article class="work-card project-card">
+                    <div>
+                        <span class="project-tag">AI / ML Project</span>
+                        <h4>AI / ML Project</h4>
+                        <p class="project-desc">Current AI/ML build where I am applying ML concepts, experimenting with models and strengthening my practical understanding.</p>
+                        <span class="stack-label">Tech Stack</span>
+                        <div class="tech-pills"><span class="tech-pill">Python</span><span class="tech-pill">Pandas</span><span class="tech-pill">Scikit-learn</span><span class="tech-pill">ML</span><span class="tech-pill">NLP</span></div>
+                        <div class="level-row"><span>My awareness / progress</span><div class="level-bar"><div class="level-fill" style="width:70%"></div></div><b class="text-purple-300 ml-2">70%</b></div>
+                    </div>
+                    <div class="project-actions"><a href="#" class="work-btn" title="Add live project link">View Project ↗</a><a href="https://github.com/alkaraikwar" target="_blank" rel="noopener noreferrer" class="repo-link">GitHub Repo →</a></div>
+                </article>
+
+                <article class="work-card project-card">
+                    <div>
+                        <span class="project-tag">IBM GLE / AI Agents</span>
+                        <h4>Agent Deployment & Web App</h4>
+                        <p class="project-desc">Working on IBM Granite / agent deployment concepts and building a web application around the agent workflow.</p>
+                        <span class="stack-label">Tech Stack</span>
+                        <div class="tech-pills"><span class="tech-pill">IBM Granite</span><span class="tech-pill">watsonx</span><span class="tech-pill">AI Agents</span><span class="tech-pill">Python</span><span class="tech-pill">Web App</span></div>
+                        <div class="level-row"><span>My awareness / progress</span><div class="level-bar"><div class="level-fill" style="width:75%"></div></div><b class="text-purple-300 ml-2">75%</b></div>
+                    </div>
+                    <div class="project-actions"><a href="#" class="work-btn" title="Add live project link">View Project ↗</a><a href="https://github.com/alkaraikwar" target="_blank" rel="noopener noreferrer" class="repo-link">GitHub Repo →</a></div>
+                </article>
+
+                <article class="work-card project-card">
+                    <div>
+                        <span class="project-tag">MERN Project</span>
+                        <h4>MERN Stack Build</h4>
+                        <p class="project-desc">Ongoing MERN project where every new concept I learn is applied directly, making the project itself a live learning tracker.</p>
+                        <span class="stack-label">Tech Stack</span>
+                        <div class="tech-pills"><span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JavaScript</span><span class="tech-pill">React</span><span class="tech-pill">Node.js</span><span class="tech-pill">Express</span><span class="tech-pill">MongoDB</span></div>
+                        <div class="level-row"><span>Learning / project progress</span><div class="level-bar"><div class="level-fill" style="width:45%"></div></div><b class="text-purple-300 ml-2">45%</b></div>
+                    </div>
+                    <div class="project-actions"><a href="#" class="work-btn" title="Add live project link">View Project ↗</a><a href="https://github.com/alkaraikwar" target="_blank" rel="noopener noreferrer" class="repo-link">GitHub Repo →</a></div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="px-6 md:px-10 py-12 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="w-full md:w-1/2 space-y-6">
+                <h2 class="text-4xl font-bold mb-6">Proficiency</h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <p class="text-sm font-semibold mb-2">Backend & Logic Development</p>
+                        <div class="w-full h-3 progress-bar-bg rounded-full overflow-hidden">
+                            <div class="bg-purple-500 h-full rounded-full" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold mb-2">Programming & Data Structures</p>
+                        <div class="w-full h-3 progress-bar-bg rounded-full overflow-hidden">
+                            <div class="bg-purple-500 h-full rounded-full" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold mb-2">Frontend / Interface Design</p>
+                        <div class="w-full h-3 progress-bar-bg rounded-full overflow-hidden">
+                            <div class="bg-purple-500 h-full rounded-full" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex justify-center">
+                <svg class="w-2/3 h-auto" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="20" y="40" width="160" height="100" rx="6" fill="#1e1b4b" stroke="#4338ca" stroke-width="4"/>
+                    <path d="M50 140 L40 170 L160 170 L150 140 Z" fill="#312e81"/>
+                    <circle cx="70" cy="80" r="15" fill="#818cf8"/>
+                    <circle cx="130" cy="100" r="10" fill="#a78bfa"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+
+<!-- START OF AI-ASSISTED DEVELOPMENT SECTION -->
+    <section id="ai-cooperation" class="px-6 md:px-10 py-16 max-w-7xl mx-auto border-t border-gray-800">
+        <h2 class="text-4xl font-bold text-center mb-2">Be Comfortable Using AI-Assisted Development Tools</h2>
+        <p class="text-purple-400 text-center uppercase tracking-widest font-semibold text-sm mb-12">The Modern SDLC Engineering Paradigm (Human-AI Co-Pilot Workflow)</p>
+
+        <!-- SDLC Pipeline Diagram / Timeline -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-16 relative">
+            
+            <!-- Phase 1 -->
+            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-950/50 px-2.5 py-1 rounded-md border border-purple-800/60">Phase 01</span>
+                        <div class="text-2xl text-blue-400 flex gap-2">
+                            <i class="fas fa-robot" title="ChatGPT/Gemini"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-100 mb-1">Feasibility & Analysis</h3>
+                    <p class="text-xs text-purple-300/80 mb-3 font-medium">Tools: ChatGPT, Gemini Advanced</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Formatting raw ideas into strict technical requirements, system design blueprints, and selecting concrete data schemas.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gray-800/60 text-[11px] flex justify-between">
+                    <span class="text-emerald-400 font-medium">🧔 Human: 80%</span>
+                    <span class="text-purple-400 font-medium">🤖 AI: 20%</span>
+                </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-950/50 px-2.5 py-1 rounded-md border border-purple-800/60">Phase 02</span>
+                        <div class="text-2xl text-orange-400">
+                            <i class="fas fa-wand-magic-sparkles" title="v0.dev"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-100 mb-1">Rapid Prototyping</h3>
+                    <p class="text-xs text-purple-300/80 mb-3 font-medium">Tools: v0.dev (Vercel), Caffeine.ai</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Converting text descriptions into interactive, components-based user interface layers within minutes for real-time validation.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gray-800/60 text-[11px] flex justify-between">
+                    <span class="text-emerald-400 font-medium">🧔 Human: 30%</span>
+                    <span class="text-purple-400 font-medium">🤖 AI: 70%</span>
+                </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300 ring-1 ring-purple-500/30 shadow-lg shadow-purple-500/5">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-500 text-white px-2.5 py-1 rounded-md">Phase 03</span>
+                        <div class="text-2xl text-purple-400 flex gap-2">
+                            <i class="fas fa-terminal" title="Cursor / Claude Code"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg text-purple-300 mb-1">Core Development</h3>
+                    <p class="text-xs text-purple-400/80 mb-3 font-medium">Tools: Cursor IDE, Claude Code (CLI)</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Writing complex full-stack logic, implementing backend routing, database queries, and offloading heavy boilerplate structure typing.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gray-800/60 text-[11px] flex justify-between">
+                    <span class="text-emerald-400 font-medium">🧔 Human: 25%</span>
+                    <span class="text-purple-400 font-medium">🤖 AI: 75%</span>
+                </div>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-950/50 px-2.5 py-1 rounded-md border border-purple-800/60">Phase 04</span>
+                        <div class="text-2xl text-red-400">
+                            <i class="fas fa-bug" title="Postman AI"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-100 mb-1">QA & Verification</h3>
+                    <p class="text-xs text-purple-300/80 mb-3 font-medium">Tools: Postman AI (Postbot)</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Automating regression suite writing, generating continuous execution unit tests, and verifying API data reliability maps.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gray-800/60 text-[11px] flex justify-between">
+                    <span class="text-emerald-400 font-medium">🧔 Human: 40%</span>
+                    <span class="text-purple-400 font-medium">🤖 AI: 60%</span>
+                </div>
+            </div>
+
+            <!-- Phase 5 -->
+            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 flex flex-col justify-between group hover:border-purple-500 transition-all duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-950/50 px-2.5 py-1 rounded-md border border-purple-800/60">Phase 05</span>
+                        <div class="text-2xl text-teal-400">
+                            <i class="fas fa-server" title="GitHub Actions AI"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-100 mb-1">CI/CD & DevOps</h3>
+                    <p class="text-xs text-purple-300/80 mb-3 font-medium">Tools: GitHub Actions AI</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Compiling server configurations, optimizing environment script blocks, and self-healing deployment workflows.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gray-800/60 text-[11px] flex justify-between">
+                    <span class="text-emerald-400 font-medium">🧔 Human: 50%</span>
+                    <span class="text-purple-400 font-medium">🤖 AI: 50%</span>
+                </div>
+            </div>
+
+        </div>
+
+       <!-- The Human Core Value Pitch (What I bring to table) -->
+        <div class="bg-gradient-to-r from-[#1e2330] to-[#251e35] p-6 md:p-8 rounded-2xl border border-purple-900/40 relative overflow-hidden shadow-xl">
+            <div class="absolute top-0 right-0 p-4 opacity-10 text-7xl text-purple-400 pointer-events-none">
+                <i class="fas fa-shield-halved"></i>
+            </div>
+            
+            <h3 class="text-xl md:text-2xl font-bold text-gray-100 mb-4 flex items-center gap-2">
+                <i class="fas fa-user-check text-emerald-400 text-lg"></i> My Personal Experience using Ai-Tools: Where AI Stops, I Take Control
+            </h3>
+            
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-4xl">
+                I do not treat AI as a replacement for software engineering fundamentals; I use it strictly as an execution accelerator. While AI engines write heavy syntactical blocks at scale, my ownership lies entirely within the core evaluation boundaries:
+            </p>
+
+
+
+          <div class="ai-tools-head">
+    <span class="ai-tools-title">AI-Assisted Development Tools:</span> 
+    Leveraged Cursor AI and v0.dev for rapid UI prototyping and architectural scaffolding while utilizing AI-assisted debugging and Postman AI for automated test generation, driving a 40% reduction in development cycles and ensuring 95% API reliability.
+</div>
+            <!-- VISUAL PIPELINE DIVS START HERE -->
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-3 text-center">
+                
+                <!-- Step 1 -->
+                <div class="bg-[#151922]/60 p-4 rounded-xl border border-gray-800/80 flex flex-col justify-center items-center backdrop-blur-sm">
+                    <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Feasibility & Analysis</span>
+                    <div class="text-sm font-semibold text-purple-400">ChatGPT / Gemini</div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-[#151922]/60 p-4 rounded-xl border border-gray-800/80 flex flex-col justify-center items-center backdrop-blur-sm">
+                    <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Prototyping</span>
+                    <div class="text-sm font-semibold text-orange-400">v0.dev</div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-[#151922]/60 p-4 rounded-xl border border-purple-900/50 flex flex-col justify-center items-center backdrop-blur-sm ring-1 ring-purple-500/10">
+                    <span class="text-xs font-bold text-purple-300 uppercase tracking-wider mb-1">Development</span>
+                    <div class="text-sm font-semibold text-purple-300">Cursor / Claude Code</div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-[#151922]/60 p-4 rounded-xl border border-gray-800/80 flex flex-col justify-center items-center backdrop-blur-sm">
+                    <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Testing</span>
+                    <div class="text-sm font-semibold text-red-400">Postman AI</div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="bg-[#151922]/60 p-4 rounded-xl border border-gray-800/80 flex flex-col justify-center items-center backdrop-blur-sm">
+                    <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Deployment/CI-CD</span>
+                    <div class="text-sm font-semibold text-teal-400">GitHub Actions AI</div>
+                </div>
+
+            </div>
+            <!-- VISUAL PIPELINE DIVS END HERE -->
+
+        </div>
+    </section>
+    <!-- END OF AI-ASSISTED DEVELOPMENT SECTION -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= Development Toolkit ================= -->
+
+<section id="learning-toolkit" class="px-6 md:px-10 py-16 max-w-7xl mx-auto">
+
+    <h2 class="text-4xl font-bold text-center mb-2">
+        Development Toolkit
+    </h2>
+
+    <p class="text-purple-400 text-center uppercase tracking-widest text-sm font-semibold mb-10">
+        Frequently Used Tools, During my AI/ML BootCamp [start of my AI/ML actual journey ]. 
+        I Hope It Helps You To Start from Beggining ! 
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-6">
+
+        <a href="https://www.kaggle.com" target="_blank" class="tool-card">
+            <i class="fab fa-python text-yellow-400"></i>
+            <span>Kaggle</span>
+        </a>
+
+        <!-- <a href="https://colab.research.google.com" target="_blank" class="tool-card">
+            <i class="fab fa-google text-blue-400"></i>
+            <span>Colab</span>
+        </a>
+
+        <a href="https://chatgpt.com" target="_blank" class="tool-card">
+            <i class="fas fa-robot text-green-400"></i>
+            <span>ChatGPT</span>
+        </a>
+
+        <a href="https://claude.ai" target="_blank" class="tool-card">
+            <i class="fas fa-brain text-purple-400"></i>
+            <span>Claude</span>
+        </a>
+
+        <a href="https://gemini.google.com" target="_blank" class="tool-card">
+            <i class="fas fa-star text-blue-500"></i>
+            <span>Gemini</span>
+        </a>
+
+       
+
+        <a href="https://github.com" target="_blank" class="tool-card">
+            <i class="fab fa-github text-white"></i>
+            <span>GitHub</span>
+        </a>
+
+        <a href="https://huggingface.co" target="_blank" class="tool-card">
+            <i class="fas fa-face-smile text-orange-400"></i>
+            <span>Hugging Face</span>
+        </a>
+
+        <a href="https://numpy.org" target="_blank" class="tool-card">
+            <i class="fas fa-calculator text-cyan-400"></i>
+            <span>NumPy</span>
+        </a>
+
+        <a href="https://pandas.pydata.org" target="_blank" class="tool-card">
+            <i class="fas fa-table text-green-400"></i>
+            <span>Pandas</span>
+        </a>
+
+        <a href="https://pytorch.org" target="_blank" class="tool-card">
+            <i class="fas fa-fire text-red-400"></i>
+            <span>PyTorch</span>
+        </a>
+
+        <a href="https://scikit-learn.org" target="_blank" class="tool-card">
+            <i class="fas fa-chart-line text-purple-400"></i>
+            <span>Scikit-Learn</span>
+        </a>
+
+        <a href="https://jupyter.org" target="_blank" class="tool-card">
+            <i class="fas fa-book-open text-orange-500"></i>
+            <span>Jupyter</span>
+        </a>
+
+        <a href="https://www.postman.com" target="_blank" class="tool-card">
+            <i class="fas fa-paper-plane text-orange-400"></i>
+            <span>Postman</span>
+        </a> -->
+
+        <a href="https://code.visualstudio.com" target="_blank" class="tool-card">
+            <i class="fas fa-laptop-code text-blue-400"></i>
+            <span>VS Code</span>
+        </a>
+         <a href="https://cursor.com" target="_blank" class="tool-card">
+            <i class="fas fa-code text-cyan-400"></i>
+            <span>Cursor</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  PROJECTS   SECTION  STARTS   FROM HERE   -->
+
+    <section id="projects" class="px-6 md:px-10 py-16 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+
+
+
+
+
+            <div class="bg-[#1e2330] p-6 rounded-lg shadow-md border border-gray-800 hover:border-purple-500 transition relative flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-3">
+                        <div class="flex items-center space-x-2 text-xl font-bold text-purple-300">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>DSORT: Visual Sorting Platform</span>
+                        </div>
+                        <a href="https://alkaraikwar.github.io/DSORT/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-green-400 border border-green-500/30 bg-green-500/10 px-2 py-0.5 rounded flex items-center gap-1 hover:bg-green-500 hover:text-white transition">
+                            <i class="fas fa-external-link-alt text-[10px]"></i> Live
+                        </a>
+                    </div>
+                    
+                    <p class="text-gray-400 text-sm mb-4">
+                        Developed an interactive algorithmic platform to visualize core sorting mechanics. Built with highly optimized DOM manipulations to render real-time array state-segregations and lower UI latency during heavy computational steps.
+                    </p>
+
+                    <div class="ai-tools-head mb-4">
+                        <span class="ai-tools-title">AI-Assisted Development Tools:</span> 
+                        Utilized Cursor AI to write optimized performance benchmarks for time complexities and v0.dev for accelerated layout prototyping.
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center text-xs text-gray-500 pt-2 border-t border-gray-800/60">
+                    <div class="flex space-x-4">
+                        <span><span class="text-orange-400 mr-1">●</span> Java / JavaScript</span>
+                    </div>
+                    <span>2026</span>
+                </div>
+            </div>
+            
+
+
+            <div class="bg-[#1e2330] p-6 rounded-lg shadow-md border border-gray-800 hover:border-purple-500 transition relative">
+                <div class="flex justify-between items-center mb-3">
+                    <div class="flex items-center space-x-2 text-xl font-bold text-purple-300">
+                        <i class="fas fa-book"></i>
+                        <span>MediTrust High-Performance Portal</span>
+                    </div>
+                    <a href="https://lustrous-fudge-cc41eb.netlify.app" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-green-400 border border-green-500/30 bg-green-500/10 px-2 py-0.5 rounded flex items-center gap-1 hover:bg-green-500 hover:text-white transition">
+                        <i class="fas fa-external-link-alt text-[10px]"></i> Live
+                    </a>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">
+                    Built a responsive, high-performance healthcare portal focusing on frontend rendering structures, asset optimization, and robust cross-browser compatibility layers.
+                </p>
+                <div class="flex justify-between items-center text-xs text-gray-500">
+                    <div class="flex space-x-4">
+                        <span><span class="text-orange-400 mr-1">●</span> HTML5 / CSS3</span>
+                    </div>
+                    <span>2025</span>
+                </div>
+            </div>
+
+            <div class="bg-[#1e2330] p-6 rounded-lg shadow-md border border-gray-800 hover:border-purple-500 transition">
+                <div class="flex items-center space-x-2 text-xl font-bold mb-3 text-purple-300">
+                    <i class="fas fa-book"></i>
+                    <span>LinkedIn AI Automation Pipeline</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">
+                    Built an automation pipeline for large-scale LinkedIn content analysis. Implemented rate-limiting and queue-based processing mechanisms while optimizing inference workflows for Llama3.
+                </p>
+                <div class="flex justify-between items-center text-xs text-gray-500">
+                    <div class="flex space-x-4">
+                        <span><span class="text-yellow-400 mr-1">●</span> Python / Llama3</span>
+                    </div>
+                    <span>2025</span>
+                </div>
+            </div>
+
+            <div class="bg-[#1e2330] p-6 rounded-lg shadow-md border border-gray-800 hover:border-purple-500 transition">
+                <div class="flex items-center space-x-2 text-xl font-bold mb-3 text-purple-300">
+                    <i class="fas fa-book"></i>
+                    <span>DSA Algorithmic State Segregator</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">
+                    Platform designed to track and categorize algorithmic problem-solving states. Built with optimized SQLite schemas and lightweight REST APIs to lower latency through precise indexing.
+                </p>
+                <div class="flex justify-between items-center text-xs text-gray-500">
+                    <div class="flex space-x-4">
+                        <span><span class="text-blue-400 mr-1">●</span> Python / SQLite</span>
+                    </div>
+                    <span>2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="certifications" class="px-4 md:px-8 py-16 bg-[#151922]">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-2">Achievements & Certifications 🏆</h2>
+        <p class="text-gray-400 text-center text-sm mb-12">CREDENTIALS AND VALUABLE SKILLS GAINED ALONG THE WAY</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 text-center flex flex-col justify-between items-center transition hover:border-gray-700">
+                <div class="w-16 h-16 bg-orange-600/10 rounded-full flex items-center justify-center text-3xl text-orange-500 mb-4">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3 class="font-bold text-base mb-2">Certified Data Analyst</h3>
+                <p class="text-gray-400 text-[11px] leading-relaxed mb-4">Validated expert tracking for scalable and data-driven infrastructure under AWS frameworks.</p>
+                <span class="bg-purple-900/50 text-purple-300 border border-purple-700 text-xs px-3 py-1 rounded-full mt-auto">AWS</span>
+            </div>
+
+            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 text-center flex flex-col justify-between items-center transition hover:border-gray-700">
+                <div class="w-16 h-16 bg-blue-600/10 rounded-full flex items-center justify-center text-3xl text-blue-400 mb-4">
+                    <i class="fab fa-python"></i>
+                </div>
+                <h3 class="font-bold text-base mb-2">Python Systems</h3>
+                <p class="text-gray-400 text-[11px] leading-relaxed mb-4">Professional specialization focused on programmatic infrastructure engineering pipelines.</p>
+                <span class="bg-purple-900/50 text-purple-300 border border-purple-700 text-xs px-3 py-1 rounded-full mt-auto">IBM</span>
+            </div>
+
+            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 text-center flex flex-col justify-between items-center transition hover:border-gray-700">
+                <div class="w-16 h-16 bg-yellow-600/10 rounded-full flex items-center justify-center text-3xl text-yellow-500 mb-4">
+                    <i class="fas fa-code"></i> </div>
+                <h3 class="font-bold text-base mb-2">HTML, CSS Certified</h3>
+                <p class="text-gray-400 text-[11px] leading-relaxed mb-4">Mastery in constructing robust layouts, semantic code, and cross-browser interfaces.</p> <span class="bg-purple-900/50 text-purple-300 border border-purple-700 text-xs px-3 py-1 rounded-full mt-auto">Pearson</span> </div>
+
+            <div class="bg-[#1e2330] p-5 rounded-xl border border-gray-800 text-center flex flex-col justify-between items-center transition hover:border-gray-700">
+                <div class="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center text-3xl text-blue-500 mb-4">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3 class="font-bold text-base mb-2">Computer Networks</h3>
+                <p class="text-gray-400 text-[11px] leading-relaxed mb-4">Advanced certification acknowledging critical core networking layout metrics.</p>
+                <span class="bg-purple-900/50 text-purple-300 border border-purple-700 text-xs px-3 py-1 rounded-full mt-auto">NPTEL / IITKgp</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section id="education" class="px-6 md:px-10 py-16 max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-12">Education</h2>
+        
+        <div class="space-y-12">
+            <div class="relative pb-6 border-b border-gray-800">
+                <div class="text-5xl text-purple-500 mb-3"><i class="fas fa-university"></i></div>
+                <h3 class="text-2xl font-bold">Parul Institute of Technology</h3>
+                <p class="text-purple-400 font-medium">B.Tech in Computer Science Engineering (AI & ML)</p>
+                <p class="text-gray-500 text-sm">Sep 2024 - Sep 2028</p>
+                <p class="text-gray-400 mt-2 text-sm">Secured First Division Pipeline State Tracking — <span class="text-purple-300 font-semibold">7.03 CGPA</span></p>
+            </div>
+
+            <div>
+                <div class="text-5xl text-indigo-500 mb-3"><i class="fas fa-school"></i></div>
+                <h3 class="text-2xl font-bold">Bihar Board</h3>
+                <p class="text-indigo-400 font-medium">Class XII (Secondary Education: Science & Math's)</p>
+                <!-- <p class="text-gray-500 text-sm">Graduated: 2024</p> -->
+                <p class="text-gray-400 mt-2 text-sm">Academic Performance aggregate standing: <span class="text-indigo-300 font-semibold">80.03%</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="px-6 md:px-10 py-16 max-w-7xl mx-auto border-t border-gray-800">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="space-y-4 w-full md:w-2/3">
+                <h2 class="text-5xl font-bold">Reach Out to me!</h2>
+                <p class="text-gray-400 text-lg">DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</p>
+                <p class="text-purple-400 font-semibold text-xl">"AI & ML Undergraduate / Backend Developer"</p>
+                <p class="text-gray-500"><i class="fas fa-map-marker-alt mr-2"></i> India</p>
+                <p class="text-green-400 font-medium"><span class="inline-block w-2.5 h-2.5 bg-green-400 rounded-full mr-2"></span>Open for opportunities: Yes</p>
+                
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="https://github.com/alkaraikwar" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alka-raikwar-971b91307/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/Alka_Raikwar3/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-yellow-600 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="https://codeforces.com/profile/alkaraikbar" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-lg hover:bg-purple-600 transition text-white block" title="Codeforces">
+                        <i class="si si-codeforces"></i>
+                    </a>
+                    <a href="mailto:alkaraikbar755@gmail.com" class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-xl hover:bg-purple-600 transition text-white block" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="w-full md:w-1/3 flex justify-center">
+                <div class="w-64 h-64 rounded-full border-4 border-purple-500 overflow-hidden shadow-xl">
+                    <img src="portfolio_img.jpg" alt="Alka Raikwar" class="w-full h-full object-cover object-top">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-8 text-gray-600 text-sm border-t border-gray-900">
+        Made with ❤️ by Alka Raikwar © 2026 <br>
+        <span class="text-xs text-gray-700">Theme inspired by developerFolio</span>
+    </footer>
+
+</body>
+</html>
