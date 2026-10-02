@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Alka</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0d1018;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =========================================
+           NAVBAR
+        ========================================= */
+
+        .navbar {
+            width: 100%;
+            height: 65px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 7%;
+
+            background: #0d1018;
+            border-bottom: 1px solid #202638;
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+        }
+
+        .nav-links a {
+            color: #9ba3b7;
+            font-size: 13px;
+            transition: 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+
+        /* =========================================
+           MAIN
+        ========================================= */
+
+        .container {
+            width: 88%;
+            max-width: 1250px;
+            margin: auto;
+        }
+
+
+        /* =========================================
+           PAGE HEADER
+        ========================================= */
+
+        .page-header {
+            padding: 50px 0 30px;
+        }
+
+        .page-header .small-title {
+            color: #a855f7;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .page-header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .page-header p {
+            color: #8992a6;
+            font-size: 13px;
+            max-width: 650px;
+        }
+
+
+        /* =========================================
+           PROJECT LAUNCHPAD
+        ========================================= */
+
+        .launchpad {
+            margin-bottom: 55px;
+        }
+
+        .launchpad-title {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .launchpad-subtitle {
+            color: #747d92;
+            font-size: 11px;
+            margin-bottom: 20px;
+        }
+
+        .project-buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+        }
+
+        .project-button {
+            min-height: 82px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            border-radius: 10px;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            color: #ffffff;
+
+            transition: 0.25s ease;
+        }
+
+        .project-button:hover {
+            transform: translateY(-4px);
+        }
+
+        .project-button i {
+            font-size: 17px;
+        }
+
+
+        /* PROJECT BUTTON COLORS */
+
+        .novus-button {
+            background: #25161f;
+            border: 1px solid #74354f;
+        }
+
+        .novus-button:hover {
+            border-color: #ef476f;
+            box-shadow: 0 12px 30px rgba(239, 71, 111, 0.14);
+        }
+
+        .flood-button {
+            background: #101f29;
+            border: 1px solid #24556d;
+        }
+
+        .flood-button:hover {
+            border-color: #22d3ee;
+            box-shadow: 0 12px 30px rgba(34, 211, 238, 0.13);
+        }
+
+        .dsort-button {
+            background: #17152b;
+            border: 1px solid #4a3d7d;
+        }
+
+        .dsort-button:hover {
+            border-color: #a78bfa;
+            box-shadow: 0 12px 30px rgba(167, 139, 250, 0.13);
+        }
+
+        .medi-button {
+            background: #11211f;
+            border: 1px solid #286158;
+        }
+
+        .medi-button:hover {
+            border-color: #2dd4bf;
+            box-shadow: 0 12px 30px rgba(45, 212, 191, 0.13);
+        }
+
+
+        /* =========================================
+           PROJECT CASE STUDY
+        ========================================= */
+
+        .project {
+            margin-bottom: 55px;
+            padding: 20px;
+
+            border-radius: 12px;
+
+            background: #121620;
+
+            border: 1px solid #2b3243;
+        }
+
+        .project-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            margin-bottom: 18px;
+        }
+
+        .project-title-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .project-icon {
+            width: 38px;
+            height: 38px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 8px;
+
+            font-size: 16px;
+        }
+
+        .project-title h2 {
+            font-size: 19px;
+            margin-bottom: 2px;
+        }
+
+        .project-title p {
+            font-size: 10px;
+            color: #788196;
+        }
+
+        .live-link {
+            padding: 7px 11px;
+
+            border-radius: 6px;
+
+            font-size: 10px;
+            font-weight: 700;
+
+            color: #ffffff;
+        }
+
+
+        /* =========================================
+           ENGINEERING PROCESS
+        ========================================= */
+
+        .process-container {
+            padding: 17px;
+
+            border-radius: 9px;
+
+            background: #0e121b;
+            border: 1px solid #272e40;
+        }
+
+        .process-heading {
+            margin-bottom: 14px;
+        }
+
+        .process-heading h3 {
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        .process-heading p {
+            font-size: 9px;
+            color: #747d92;
+        }
+
+        .process-grid {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 8px;
+        }
+
+        .process-box {
+            min-height: 66px;
+
+            padding: 9px;
+
+            border-radius: 6px;
+
+            background: #131824;
+
+            border: 1px solid #2b3243;
+
+            transition: 0.2s ease;
+        }
+
+        .process-box:hover {
+            transform: translateY(-2px);
+        }
+
+        .process-number {
+            display: block;
+
+            font-size: 8px;
+
+            font-weight: 700;
+
+            margin-bottom: 2px;
+        }
+
+        .process-box h4 {
+            font-size: 10px;
+
+            margin-bottom: 3px;
+
+            color: #ffffff;
+        }
+
+        .process-box p {
+            font-size: 8px;
+
+            line-height: 1.35;
+
+            color: #7e879b;
+        }
+
+
+        /* =========================================
+           MINI ARCHITECTURE
+        ========================================= */
+
+        .architecture {
+            margin-top: 9px;
+
+            padding: 12px;
+
+            border-radius: 7px;
+
+            background: #10141e;
+
+            border: 1px solid #292f40;
+        }
+
+        .architecture-title {
+            font-size: 9px;
+            font-weight: 700;
+            margin-bottom: 9px;
+        }
+
+        .architecture-flow {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 7px;
+
+            flex-wrap: wrap;
+        }
+
+        .architecture-flow span {
+            padding: 5px 8px;
+
+            border-radius: 4px;
+
+            background: #191f2c;
+
+            border: 1px solid #343c50;
+
+            font-size: 7.5px;
+
+            color: #c8cfdd;
+        }
+
+        .architecture-flow b {
+            font-size: 9px;
+        }
+
+
+        /* =========================================
+           NOVUS AI THEME
+        ========================================= */
+
+        .novus {
+            border-color: #492b3a;
+            background: #17121a;
+        }
+
+        .novus .project-icon {
+            color: #ff6b91;
+            background: #301722;
+            border: 1px solid #663149;
+        }
+
+        .novus .live-link {
+            background: #b93661;
+        }
+
+        .novus .process-container {
+            border-color: #493041;
+        }
+
+        .novus .process-number,
+        .novus .process-heading h3,
+        .novus .architecture-title {
+            color: #ff6b91;
+        }
+
+        .novus .process-box:hover {
+            border-color: #d84d75;
+        }
+
+        .novus .architecture-flow b {
+            color: #ff6b91;
+        }
+
+
+        /* =========================================
+           FLOODGUARD THEME
+        ========================================= */
+
+        .floodguard {
+            border-color: #21475b;
+            background: #101a21;
+        }
+
+        .floodguard .project-icon {
+            color: #22d3ee;
+            background: #102a35;
+            border: 1px solid #22596d;
+        }
+
+        .floodguard .live-link {
+            background: #087f9c;
+        }
+
+        .floodguard .process-container {
+            border-color: #21475b;
+        }
+
+        .floodguard .process-number,
+        .floodguard .process-heading h3,
+        .floodguard .architecture-title {
+            color: #22d3ee;
+        }
+
+        .floodguard .process-box:hover {
+            border-color: #1598b5;
+        }
+
+        .floodguard .architecture-flow b {
+            color: #22d3ee;
+        }
+
+
+        /* =========================================
+           DSORT THEME
+        ========================================= */
+
+        .dsort {
+            border-color: #44396b;
+            background: #151327;
+        }
+
+        .dsort .project-icon {
+            color: #a78bfa;
+            background: #211b3a;
+            border: 1px solid #514584;
+        }
+
+        .dsort .live-link {
+            background: #6845b5;
+        }
+
+        .dsort .process-container {
+            border-color: #44396b;
+        }
+
+        .dsort .process-number,
+        .dsort .process-heading h3,
+        .dsort .architecture-title {
+            color: #a78bfa;
+        }
+
+        .dsort .process-box:hover {
+            border-color: #8068d1;
+        }
+
+        .dsort .architecture-flow b {
+            color: #a78bfa;
+        }
+
+
+        /* =========================================
+           MEDI TRUST THEME
+        ========================================= */
+
+        .meditrust {
+            border-color: #285b55;
+            background: #111d1c;
+        }
+
+        .meditrust .project-icon {
+            color: #2dd4bf;
+            background: #102e2a;
+            border: 1px solid #2d655e;
+        }
+
+        .meditrust .live-link {
+            background: #168275;
+        }
+
+        .meditrust .process-container {
+            border-color: #285b55;
+        }
+
+        .meditrust .process-number,
+        .meditrust .process-heading h3,
+        .meditrust .architecture-title {
+            color: #2dd4bf;
+        }
+
+        .meditrust .process-box:hover {
+            border-color: #289c8c;
+        }
+
+        .meditrust .architecture-flow b {
+            color: #2dd4bf;
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        footer {
+            padding: 35px 0;
+
+            text-align: center;
+
+            border-top: 1px solid #202638;
+
+            color: #626b7f;
+
+            font-size: 10px;
+        }
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 950px) {
+
+            .project-buttons {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                padding: 0 5%;
+            }
+
+            .nav-links {
+                gap: 12px;
+            }
+
+            .nav-links a {
+                font-size: 10px;
+            }
+
+            .container {
+                width: 92%;
+            }
+
+            .page-header h1 {
+                font-size: 26px;
+            }
+
+            .project-buttons {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-header {
+                align-items: flex-start;
+                gap: 12px;
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        Alka Raikwar 
+        
+    </div>
+    <!-- <h1> FDE ,Founder </h1> -->
+
+    <nav class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="index.html#skills">Skills</a>
+
+        <a href="projects.html">Projects</a>
+
+        <a href="index.html#certifications">Certifications</a>
+
+        <a href="index.html#education">Education</a>
+
+        <a href="index.html#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+
+
+<main class="container">
+
+
+    <!-- =========================================
+         PAGE HEADER
+    ========================================= -->
+
+    <section class="page-header">
+
+        <div class="small-title">
+            Portfolio
+        </div>
+
+        <h1>
+            My Projects
+        </h1>
+
+        <p>
+            Engineering-focused projects covering AI systems,
+            agentic workflows, education technology, healthcare,
+            and full-stack development.
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================================
+         PROJECT LAUNCHPAD
+    ========================================= -->
+
+    <section class="launchpad">
+
+        <h2 class="launchpad-title">
+            Explore My Projects
+        </h2>
+
+        <p class="launchpad-subtitle">
+            Click a project to open its live application.
+        </p>
+
+
+        <div class="project-buttons">
+
+
+            <!-- NOVUS AI -->
+
+            <a
+                href="https://cardiovascular-risk-screening-syste.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-button novus-button"
+            >
+
+                <i class="fas fa-heart-pulse"></i>
+
+                NovusAI
+
+            </a>
+
+
+
+            <!-- FLOODGUARD -->
+
+            <a
+                href="https://floodguard-ai.streamlit.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-button flood-button"
+            >
+
+                <i class="fas fa-water"></i>
+
+                FloodGuard AI
+
+            </a>
+
+
+
+            <!-- DSORT -->
+
+            <a
+                href="https://alkaraikwar.github.io/DSORT/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-button dsort-button"
+            >
+
+                <i class="fas fa-graduation-cap"></i>
+
+                DSORT
+
+            </a>
+
+
+
+            <!-- MEDI TRUST -->
+
+            <a
+                href="https://lustrous-fudge-cc41eb.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-button medi-button"
+            >
+
+                <i class="fas fa-hospital"></i>
+
+                MediTrust
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         NOVUS AI
+    ========================================================= -->
+
+    <section class="project novus" id="novusai">
+
+
+        <div class="project-header">
+
+            <div class="project-title-area">
+
+                <div class="project-icon">
+                    <i class="fas fa-heart-pulse"></i>
+                </div>
+
+                <div class="project-title">
+
+                    <h2>NovusAI</h2>
+
+                    <p>
+                        Cardiovascular Risk Screening System
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="https://cardiovascular-risk-screening-syste.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="live-link"
+            >
+                Live Project ↗
+            </a>
+
+        </div>
+
+
+
+        <div class="process-container">
+
+            <div class="process-heading">
+
+                <h3>Engineering Process</h3>
+
+                <p>
+                    Structured development workflow from problem definition to deployment.
+                </p>
+
+            </div>
+
+
+            <div class="process-grid">
+
+
+                <div class="process-box">
+                    <span class="process-number">01</span>
+                    <h4>Problem</h4>
+                    <p>Defined cardiovascular screening need.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">02</span>
+                    <h4>User Flow</h4>
+                    <p>Mapped patient input to risk output.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">03</span>
+                    <h4>Requirements</h4>
+                    <p>Defined screening and reporting requirements.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">04</span>
+                    <h4>HLD</h4>
+                    <p>Designed application and prediction layers.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">05</span>
+                    <h4>Model Design</h4>
+                    <p>Defined AI prediction workflow.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">06</span>
+                    <h4>Data / Tools</h4>
+                    <p>Integrated model and application components.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">07</span>
+                    <h4>LLD</h4>
+                    <p>Designed input, processing and output logic.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">08</span>
+                    <h4>Implementation</h4>
+                    <p>Connected UI, backend and prediction workflow.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">09</span>
+                    <h4>Testing</h4>
+                    <p>Validated inputs and prediction workflow.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">10</span>
+                    <h4>Deployment</h4>
+                    <p>Deployed the application for live access.</p>
+                </div>
+
+
+            </div>
+
+
+            <div class="architecture">
+
+                <div class="architecture-title">
+                    System Flow
+                </div>
+
+                <div class="architecture-flow">
+
+                    <span>User</span>
+                    <b>→</b>
+
+                    <span>Web App</span>
+                    <b>→</b>
+
+                    <span>Input Data</span>
+                    <b>→</b>
+
+                    <span>AI Model</span>
+                    <b>→</b>
+
+                    <span>Risk Result</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         FLOODGUARD AI
+    ========================================================= -->
+
+    <section class="project floodguard" id="floodguard">
+
+
+        <div class="project-header">
+
+            <div class="project-title-area">
+
+                <div class="project-icon">
+                    <i class="fas fa-water"></i>
+                </div>
+
+                <div class="project-title">
+
+                    <h2>FloodGuard AI</h2>
+
+                    <p>
+                        AI-powered flood response and management system
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="https://floodguard-ai.streamlit.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="live-link"
+            >
+                Live Project ↗
+            </a>
+
+        </div>
+
+
+
+        <div class="process-container">
+
+            <div class="process-heading">
+
+                <h3>Engineering Process</h3>
+
+                <p>
+                    Agentic workflow designed for coordinated flood-response analysis.
+                </p>
+
+            </div>
+
+
+            <div class="process-grid">
+
+
+                <div class="process-box">
+                    <span class="process-number">01</span>
+                    <h4>Problem</h4>
+                    <p>Defined fragmented flood information problem.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">02</span>
+                    <h4>User Flow</h4>
+                    <p>Mapped information input to actionable response.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">03</span>
+                    <h4>Requirements</h4>
+                    <p>Defined data collection and response requirements.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">04</span>
+                    <h4>HLD</h4>
+                    <p>Designed application and multi-agent architecture.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">05</span>
+                    <h4>Agent Design</h4>
+                    <p>Defined specialized agents and coordinator.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">06</span>
+                    <h4>Tools</h4>
+                    <p>Integrated IBM Granite, APIs and agent tools.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">07</span>
+                    <h4>LLD</h4>
+                    <p>Defined agent responsibilities and data flow.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">08</span>
+                    <h4>Implementation</h4>
+                    <p>Connected UI, agents, model and integrations.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">09</span>
+                    <h4>Testing</h4>
+                    <p>Validated agent workflow and generated outputs.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">10</span>
+                    <h4>Deployment</h4>
+                    <p>Deployed the complete flood-response workflow.</p>
+                </div>
+
+
+            </div>
+
+
+            <div class="architecture">
+
+                <div class="architecture-title">
+                    System Architecture
+                </div>
+
+                <div class="architecture-flow">
+
+                    <span>User</span>
+                    <b>→</b>
+
+                    <span>Application</span>
+                    <b>→</b>
+
+                    <span>Coordinator Agent</span>
+                    <b>→</b>
+
+                    <span>Specialized Agents</span>
+                    <b>→</b>
+
+                    <span>IBM Granite</span>
+                    <b>→</b>
+
+                    <span>Response</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         DSORT
+    ========================================================= -->
+
+    <section class="project dsort" id="dsort">
+
+
+        <div class="project-header">
+
+            <div class="project-title-area">
+
+                <div class="project-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+
+                <div class="project-title">
+
+                    <h2>DSORT</h2>
+
+                    <p>
+                        EdTech / DSA learning platform
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="https://alkaraikwar.github.io/DSORT/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="live-link"
+            >
+                Live Project ↗
+            </a>
+
+        </div>
+
+
+
+        <div class="process-container">
+
+            <div class="process-heading">
+
+                <h3>Engineering Process</h3>
+
+                <p>
+                    Structured product development for an interactive learning platform.
+                </p>
+
+            </div>
+
+
+            <div class="process-grid">
+
+
+                <div class="process-box">
+                    <span class="process-number">01</span>
+                    <h4>Problem</h4>
+                    <p>Defined the DSA learning and practice gap.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">02</span>
+                    <h4>User Flow</h4>
+                    <p>Mapped learning, practice and progress flow.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">03</span>
+                    <h4>Requirements</h4>
+                    <p>Defined learning and interaction requirements.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">04</span>
+                    <h4>HLD</h4>
+                    <p>Designed modular EdTech platform structure.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">05</span>
+                    <h4>Feature Design</h4>
+                    <p>Structured learning and problem-solving modules.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">06</span>
+                    <h4>Tools</h4>
+                    <p>Selected frontend and interactive web technologies.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">07</span>
+                    <h4>LLD</h4>
+                    <p>Designed pages, components and interaction logic.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">08</span>
+                    <h4>Implementation</h4>
+                    <p>Built responsive learning interface and features.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">09</span>
+                    <h4>Testing</h4>
+                    <p>Tested navigation, interactions and responsiveness.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">10</span>
+                    <h4>Deployment</h4>
+                    <p>Published the platform for web access.</p>
+                </div>
+
+
+            </div>
+
+
+            <div class="architecture">
+
+                <div class="architecture-title">
+                    Platform Flow
+                </div>
+
+                <div class="architecture-flow">
+
+                    <span>Learner</span>
+                    <b>→</b>
+
+                    <span>Platform</span>
+                    <b>→</b>
+
+                    <span>Learn</span>
+                    <b>→</b>
+
+                    <span>Practice</span>
+                    <b>→</b>
+
+                    <span>Progress</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         MEDI TRUST
+    ========================================================= -->
+
+    <section class="project medittrust" id="meditrust">
+
+
+        <div class="project-header">
+
+            <div class="project-title-area">
+
+                <div class="project-icon">
+                    <i class="fas fa-hospital"></i>
+                </div>
+
+                <div class="project-title">
+
+                    <h2>MediTrust</h2>
+
+                    <p>
+                        Healthcare-focused web application
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="https://lustrous-fudge-cc41eb.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="live-link"
+            >
+                Live Project ↗
+            </a>
+
+        </div>
+
+
+
+        <div class="process-container">
+
+            <div class="process-heading">
+
+                <h3>Engineering Process</h3>
+
+                <p>
+                    User-focused healthcare application development workflow.
+                </p>
+
+            </div>
+
+
+            <div class="process-grid">
+
+
+                <div class="process-box">
+                    <span class="process-number">01</span>
+                    <h4>Problem</h4>
+                    <p>Defined the healthcare access problem.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">02</span>
+                    <h4>User Flow</h4>
+                    <p>Mapped user interaction and service flow.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">03</span>
+                    <h4>Requirements</h4>
+                    <p>Defined healthcare information requirements.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">04</span>
+                    <h4>HLD</h4>
+                    <p>Designed modular healthcare application structure.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">05</span>
+                    <h4>Feature Design</h4>
+                    <p>Structured healthcare-focused user features.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">06</span>
+                    <h4>Tools</h4>
+                    <p>Selected frontend and application technologies.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">07</span>
+                    <h4>LLD</h4>
+                    <p>Defined components and application interactions.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">08</span>
+                    <h4>Implementation</h4>
+                    <p>Implemented interface and application workflow.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">09</span>
+                    <h4>Testing</h4>
+                    <p>Validated interface, navigation and interactions.</p>
+                </div>
+
+
+                <div class="process-box">
+                    <span class="process-number">10</span>
+                    <h4>Deployment</h4>
+                    <p>Deployed the healthcare application online.</p>
+                </div>
+
+
+            </div>
+
+
+            <div class="architecture">
+
+                <div class="architecture-title">
+                    Application Flow
+                </div>
+
+                <div class="architecture-flow">
+
+                    <span>User</span>
+                    <b>→</b>
+
+                    <span>Healthcare UI</span>
+                    <b>→</b>
+
+                    <span>Services</span>
+                    <b>→</b>
+
+                    <span>Application Logic</span>
+                    <b>→</b>
+
+                    <span>Response</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+<!-- 
+<footer>
+
+    © 2026 Alka — AI & ML | FDE | Full-Stack Engineer   MERN & PYTHON | DSA with Java 
+
+    Contact info
+
+</footer> -->
+
+<footer>
+
+    <p>
+        © 2026 Alka — AI & ML | FDE | Full-Stack Engineer | MERN & Python | DSA with Java
+    </p>
+
+    <p>
+        <strong>Contact:</strong>
+
+        <a href="mailto:alkaraikbar755@gmail.com">
+            alkaraikbar755@gmail.com
+        </a>
+
+        —
+
+        <a href="tel:+916207020293">
+            +91 6207020293
+        </a>
+
+        —
+
+        <a
+            href="https://github.com/alkaraikwar"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub
+        </a>
+
+        —
+
+        <a
+            href="YOUR_LINKEDIN_URL"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            LinkedIn
+        </a>
+
+        —
+
+        <a
+            href="YOUR_LEETCODE_URL"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            LeetCode
+        </a>
+
+        —
+
+        <a
+            href="YOUR_PORTFOLIO_URL"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Portfolio
+        </a>
+
+    </p>
+
+</footer>
+</body>
+</html>
